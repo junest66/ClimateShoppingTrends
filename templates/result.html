@@ -51,9 +51,9 @@
                         <div class="franchiess-container">
                             {% for franchise in franchises %}
                             <div class="franchise-info border-top">
-                                <p>{{ franchise.name }}</p>
-                                <img src="{{ franchise.image }}" alt="가맹점 이미지">
-                                <p>{{ franchise.address }}</p>
+                                <p>{{ franchise.res_name }}</p>
+                                <p>{{ franchise.res_category }}</p>
+                                <p>{{ franchise.res_address }}</p>
                             </div>
                             {% endfor %}
                         </div>
