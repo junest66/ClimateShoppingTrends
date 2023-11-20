@@ -2,6 +2,7 @@ from flask import Flask, request, render_template
 from card_crawler import fetch_recommended_cards_by_category
 from franchisee_crawler import franchises
 from utill import translate_to_korean
+from utill import map_time_to_number
 from model_recommend import my_model
 
 app = Flask(__name__)
@@ -16,13 +17,14 @@ def form():
 @app.route("/submit", methods=["POST"])
 def submit():
     model_data = {
-        "gender": request.form.get("gender"),
-        "age": request.form.get("age"),
-        "province": request.form.get("currentProvince"),
-        "district": request.form.get("currentDistrict"),
-        "influx": request.form.get("influx"),
-        "married": request.form.get("married"),
-        "children": request.form.get("children"),
+        "apr_tizn_c": map_time_to_number(), # 시간
+        "province": request.form.get("currentProvince"), # 광역시도
+        "district": request.form.get("currentDistrict"), # 시군구
+        "gender": request.form.get("gender"), # 성별
+        "age": request.form.get("age"), # 나이대 그룹
+        "married": request.form.get("married"), # 결혼 여부
+        "children": request.form.get("children"), # 자녀 보유 여부
+        "influx": request.form.get("influx") # 거주지 일치 여부
     }
 
     # 데이터를 모델에 전달하고 결과를 받습니다.
