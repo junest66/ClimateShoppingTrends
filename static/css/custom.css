@@ -1,0 +1,62 @@
+/* custom. css */
+
+.tab button {
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid #E2E2E2;
+    color: #E2E2E2;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 25px;
+    outline: none;
+    width: 50%;
+    font-weight: 600;
+}
+
+.active-tab {
+    color: black !important;
+    border-bottom: 2px solid black !important;
+    background-color: #FFFFFF !important;
+}
+
+/* card-container css */
+.card-container {
+    display: none;
+}
+.card-info {
+    padding: 40px 30px;
+    background-color: #FFFFFF;
+}
+
+.card-image {
+    width: 150px;
+    height: 150px;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.card-name {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.card-corp {
+    font-size: 20px;
+    color: #888888;
+}
+
+.benefits-data {
+    width: 200px;
+}
+
+.benefits-store {
+    font-size: 20px;
+}
+
+.benefits-num {
+    font-size: 25px;
+    font-weight: 500;
+}

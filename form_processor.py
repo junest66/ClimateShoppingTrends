@@ -47,7 +47,7 @@ def submit():
         industry=industry,
         user_info=korean_user_info,
         franchises=franchises(),
-        card=fetch_recommended_cards_by_category(industry),
+        cards=fetch_recommended_cards_by_category(industry),
     )
 
 
