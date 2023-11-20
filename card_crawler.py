@@ -7,6 +7,7 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.action_chains import ActionChains
 import time
 
+
 # 카드추천을 위한 업종분류
 def fetch_recommended_cards_by_category(category):
     """
@@ -27,10 +28,11 @@ def fetch_recommended_cards_by_category(category):
         "취미교양용품": [14, 16, 9],
         "관람": [8, 19, 71, 69],
         "공연": [19, 112],
-        "렌터카": [18, 107]
+        "렌터카": [18, 107],
     }
     benefit_codes = benefit_code_mapping.get(category, [])
     return crawl_cards_for_benefits(benefit_codes)
+
 
 # 업종에 관련된 카드를 크롤링
 def crawl_cards_for_benefits(benefit_codes):
@@ -42,14 +44,15 @@ def crawl_cards_for_benefits(benefit_codes):
     driver.get(f"{base_url}{','.join(map(str, benefit_codes))}")
     time.sleep(3)
 
-    cards = [] # 최종 카드 정보를 저장할 리스트
+    cards = []  # 최종 카드 정보를 저장할 리스트
     for card_index in range(1, 4):
-        card_info = extract_card_info(driver, card_index) # 개별 카드 정보를 저장할 딕셔너리
+        card_info = extract_card_info(driver, card_index)  # 개별 카드 정보를 저장할 딕셔너리
         if card_info:
             cards.append(card_info)
 
     driver.quit()
     return cards
+
 
 def extract_card_info(driver, card_index):
     """
@@ -58,24 +61,43 @@ def extract_card_info(driver, card_index):
     card_info = {"benefits": []}
     card_info["name"] = get_card_detail(driver, card_index, "span.card_name")
     card_info["card_company"] = get_card_detail(driver, card_index, "span.card_corp")
+    card_info["card_img_url"] = get_card_detail(driver, card_index, "img")
 
     for benefit_index in range(1, 4):
-        benefit_key = get_card_detail(driver, card_index, "i", benefit_index=benefit_index)
-        benefit_value = get_card_detail(driver, card_index, "span", benefit_index=benefit_index)
+        benefit_key = get_card_detail(
+            driver, card_index, "i", benefit_index=benefit_index
+        )
+        benefit_value = get_card_detail(
+            driver, card_index, "span", benefit_index=benefit_index
+        )
         if benefit_key and benefit_value:
             card_info["benefits"].append({"key": benefit_key, "value": benefit_value})
 
     return card_info
+
 
 def get_card_detail(driver, card_index, selector, benefit_index=None):
     """
     주어진 셀렉터를 사용하여 카드의 세부 정보를 가져옵니다.
     """
     try:
-        base_selector = f"#q-app > section > div.search_card > section > div > article.con_area > article > ul > li:nth-child({card_index}) > div > div.card_data > div.name > p > {selector}"
-        if benefit_index:
-            base_selector = f"#q-app > section > div.search_card > section > div > article.con_area > article > ul > li:nth-child({card_index}) > div > div.card_data > div.sale > p:nth-child({benefit_index}) > {selector}"
-        return WebDriverWait(driver, 1).until(EC.presence_of_element_located((By.CSS_SELECTOR, base_selector))).text
+        if selector == "img":
+            base_selector = f"#q-app > section > div.search_card > section > div > article.con_area > article > ul > li:nth-child({card_index}) > div > div.card_img > p > img"
+            return (
+                WebDriverWait(driver, 1)
+                .until(EC.presence_of_element_located((By.CSS_SELECTOR, base_selector)))
+                .get_attribute("src")
+            )
+        elif selector != "img":
+            base_selector = f"#q-app > section > div.search_card > section > div > article.con_area > article > ul > li:nth-child({card_index}) > div > div.card_data > div.name > p > {selector}"
+
+            if benefit_index:
+                base_selector = f"#q-app > section > div.search_card > section > div > article.con_area > article > ul > li:nth-child({card_index}) > div > div.card_data > div.sale > p:nth-child({benefit_index}) > {selector}"
+            return (
+                WebDriverWait(driver, 1)
+                .until(EC.presence_of_element_located((By.CSS_SELECTOR, base_selector)))
+                .text
+            )
     except Exception as e:
         print(f"세부 정보 추출 중 오류 발생: {e}")
         return None
