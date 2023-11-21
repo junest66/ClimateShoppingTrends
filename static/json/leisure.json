@@ -1,0 +1,382 @@
+[
+    {
+        "benefits": [
+            {
+                "key": "KB Pay",
+                "value": "10% 할인"
+            },
+            {
+                "key": "음식점",
+                "value": "10% 할인"
+            },
+            {
+                "key": "서비스팩 3개 중",
+                "value": "1개 선택할인"
+            }
+        ],
+        "name": "KB국민 My WE:SH 카드",
+        "card_company": "KB국민카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/2441/card_img/28283/2441card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "교통/통신",
+                "value": "10% 할인"
+            },
+            {
+                "key": "주유소/충전소",
+                "value": "60원/L 할인"
+            },
+            {
+                "key": "생활/교육/쇼핑 등",
+                "value": "적립팩 선택"
+            }
+        ],
+        "name": "다담카드",
+        "card_company": "KB국민카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/121/card_img/20353/121card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "1,500원당",
+                "value": "3~1마일 적립"
+            },
+            {
+                "key": "KTX, SRT",
+                "value": "10% 할인"
+            },
+            {
+                "key": "공항라운지",
+                "value": "연 2회 무료"
+            }
+        ],
+        "name": "마일앤조이카드(대한항공)",
+        "card_company": "IBK기업은행",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/267/card_img/20490/267card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "20개 영역 중",
+                "value": "선택형 할인"
+            },
+            {
+                "key": "택시",
+                "value": "10% 할인"
+            },
+            {
+                "key": "온라인쇼핑",
+                "value": "5% 할인"
+            }
+        ],
+        "name": "Easy all 티타늄카드",
+        "card_company": "KB국민카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/634/card_img/21400/634card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "매년 연간스페셜",
+                "value": "3만MR 적립(30만원 상당)"
+            },
+            {
+                "key": "공항라운지/발레파킹",
+                "value": "무료 이용"
+            },
+            {
+                "key": "1,000원당 최대",
+                "value": "3MR 적립"
+            }
+        ],
+        "name": "American Express® Gold Card",
+        "card_company": "현대카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/2281/card_img/20685/2281card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "캐시백형",
+                "value": "1% 캐시백"
+            },
+            {
+                "key": "대한항공형",
+                "value": "1,500원/1마일 적립"
+            },
+            {
+                "key": "기프트옵션",
+                "value": "1회/연 제공"
+            }
+        ],
+        "name": "신한카드 The BEST-F",
+        "card_company": "신한카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/37/card_img/20118/37card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "1,000원당",
+                "value": "3~1마일 적립"
+            },
+            {
+                "key": "KTX, SRT",
+                "value": "10% 할인"
+            },
+            {
+                "key": "공항라운지",
+                "value": "연 2회 무료"
+            }
+        ],
+        "name": "마일앤조이카드(아시아나)",
+        "card_company": "IBK기업은행",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/268/card_img/20491/268card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "점심/배달앱/베이커리",
+                "value": "7% 적립"
+            },
+            {
+                "key": "온/오프라인쇼핑",
+                "value": "7% 적립"
+            },
+            {
+                "key": "커피",
+                "value": "30~7% 적립"
+            }
+        ],
+        "name": "하나멤버스 1Q카드 내맘대로",
+        "card_company": "하나카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/237/card_img/20464/237card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "매년 연간스페셜",
+                "value": "10만MR 적립(100만원 상당)"
+            },
+            {
+                "key": "공항라운지/발레파킹",
+                "value": "무료 이용"
+            },
+            {
+                "key": "1천원당 최대",
+                "value": "4.5MR 적립"
+            }
+        ],
+        "name": "American Express The Platinum Card®",
+        "card_company": "현대카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/2280/card_img/20686/2280card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "기프트바우처",
+                "value": "100만원상당 제공"
+            },
+            {
+                "key": "해외/면세점/항공사",
+                "value": "2마일리지 적립"
+            },
+            {
+                "key": "본인 및 동반1인",
+                "value": "PP카드 제공"
+            }
+        ],
+        "name": "로얄블루1000카드 [SKYPASS]",
+        "card_company": "우리카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/1731/card_img/22383/1731card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "대형마트",
+                "value": "5% 할인"
+            },
+            {
+                "key": "아웃백",
+                "value": "25% 할인"
+            },
+            {
+                "key": "CGV",
+                "value": "6,000원 할인"
+            }
+        ],
+        "name": "카드의정석 NEW우리V카드",
+        "card_company": "우리카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/73/card_img/20155/73card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "NOL포인트",
+                "value": "10% 적립"
+            },
+            {
+                "key": "해외결제",
+                "value": "10% 적립"
+            },
+            {
+                "key": "커피·편의점·쇼핑",
+                "value": "10% 적립"
+            }
+        ],
+        "name": "NOL 카드",
+        "card_company": "현대카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/2521/card_img/28840/2521card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "연 1회",
+                "value": "Special Service 제공"
+            },
+            {
+                "key": "월 2회/연 6회",
+                "value": "LoungeKey 제공"
+            },
+            {
+                "key": "1,500원당",
+                "value": "2~1마일 적립"
+            }
+        ],
+        "name": "CLUB Signature SKYPASS 카드",
+        "card_company": "하나카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/449/card_img/20961/449card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "피트니스",
+                "value": "5% 적립"
+            },
+            {
+                "key": "학원",
+                "value": "5% 적립"
+            },
+            {
+                "key": "골프",
+                "value": "5% 적립"
+            }
+        ],
+        "name": "Easy pick 티타늄 카드",
+        "card_company": "KB국민카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/580/card_img/21321/580card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "영화/구독서비스",
+                "value": "30% 적립"
+            },
+            {
+                "key": "쇼핑",
+                "value": "5% 적립"
+            },
+            {
+                "key": "주유소/핸드폰요금",
+                "value": "5% 적립"
+            }
+        ],
+        "name": "BC 바로 리워드 플러스",
+        "card_company": "BC 바로카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/2347/card_img/25291/2347card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "국내가맹점",
+                "value": "0.5% 적립"
+            },
+            {
+                "key": "해외, 면세점",
+                "value": "2% 특별적립"
+            },
+            {
+                "key": "프리미엄기프트",
+                "value": "5만원 증정"
+            }
+        ],
+        "name": "그랑블루 1st",
+        "card_company": "우리카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/717/card_img/22191/717card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "국내 가맹점",
+                "value": "1마일 적립"
+            },
+            {
+                "key": "해외, 면세점",
+                "value": "2마일 적립"
+            },
+            {
+                "key": "전세계 공항라운지",
+                "value": "연 20회 무료이용"
+            }
+        ],
+        "name": "Diners Club MILEAGE",
+        "card_company": "우리카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/2397/card_img/26138/2397card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "Air Money 포인트",
+                "value": "최대 2% 적립"
+            },
+            {
+                "key": "바우처 서비스",
+                "value": "연 1회 제공"
+            },
+            {
+                "key": "전세계 공항라운지",
+                "value": "무료 이용"
+            }
+        ],
+        "name": "CEO카드",
+        "card_company": "IBK기업은행",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/2339/card_img/24303/2339card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "국내 가맹점",
+                "value": "1~2.3% 적립"
+            },
+            {
+                "key": "해외, 면세점",
+                "value": "2% 적립"
+            },
+            {
+                "key": "전세계 공항라운지",
+                "value": "연 20회 무료이용"
+            }
+        ],
+        "name": "Diners Club POINT",
+        "card_company": "우리카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/2396/card_img/26137/2396card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "EV충전",
+                "value": "20% 하나머니 적립"
+            },
+            {
+                "key": "쇼핑/패션/명품",
+                "value": "5% 하나머니 적립"
+            },
+            {
+                "key": "페이결제 최대",
+                "value": "1.5% 하나머니 적립"
+            }
+        ],
+        "name": "내맘대로 쁨 카드",
+        "card_company": "하나카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/2300/card_img/28825/2300card.png"
+    }
+]

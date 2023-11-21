@@ -1,0 +1,382 @@
+[
+    {
+        "benefits": [
+            {
+                "key": "교통/통신",
+                "value": "10% 할인"
+            },
+            {
+                "key": "주유소/충전소",
+                "value": "60원/L 할인"
+            },
+            {
+                "key": "생활/교육/쇼핑 등",
+                "value": "적립팩 선택"
+            }
+        ],
+        "name": "다담카드",
+        "card_company": "KB국민카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/121/card_img/20353/121card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "1,500원당",
+                "value": "3~1마일 적립"
+            },
+            {
+                "key": "KTX, SRT",
+                "value": "10% 할인"
+            },
+            {
+                "key": "공항라운지",
+                "value": "연 2회 무료"
+            }
+        ],
+        "name": "마일앤조이카드(대한항공)",
+        "card_company": "IBK기업은행",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/267/card_img/20490/267card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "1,500원당",
+                "value": "1마일 적립"
+            },
+            {
+                "key": "1,500원당 최대",
+                "value": "2마일 특별적립"
+            },
+            {
+                "key": "바우처",
+                "value": "20만원상당 제공"
+            }
+        ],
+        "name": "BLISS.7 카드(마일리지)",
+        "card_company": "IBK기업은행",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/671/card_img/21436/671card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "매년 연간스페셜",
+                "value": "3만MR 적립(30만원 상당)"
+            },
+            {
+                "key": "공항라운지/발레파킹",
+                "value": "무료 이용"
+            },
+            {
+                "key": "1,000원당 최대",
+                "value": "3MR 적립"
+            }
+        ],
+        "name": "American Express® Gold Card",
+        "card_company": "현대카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/2281/card_img/20685/2281card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "대한항공마일리지",
+                "value": "1.2~3마일 적립"
+            },
+            {
+                "key": "프리미엄쿠폰",
+                "value": "연 1회 제공"
+            },
+            {
+                "key": "해외 공항라운지",
+                "value": "무료이용 서비스"
+            }
+        ],
+        "name": "BeV V카드(스카이패스형)",
+        "card_company": "KB국민카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/131/card_img/20360/131card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "포인트리",
+                "value": "1.2~3.0% 적립"
+            },
+            {
+                "key": "프리미엄쿠폰",
+                "value": "연 1회 제공"
+            },
+            {
+                "key": "해외 공항라운지",
+                "value": "무료이용 서비스"
+            }
+        ],
+        "name": "BeV V카드(포인트형)",
+        "card_company": "KB국민카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/130/card_img/20359/130card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "1,500원당",
+                "value": "1마일 적립"
+            },
+            {
+                "key": "바우처 최대",
+                "value": "10만원 제공"
+            },
+            {
+                "key": "영화",
+                "value": "2천원 할인"
+            }
+        ],
+        "name": "BLISS.5 카드(마일리지)",
+        "card_company": "IBK기업은행",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/772/card_img/22246/772card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "포인트리",
+                "value": "1.1~1.5% 적립"
+            },
+            {
+                "key": "전 주유소/충전소",
+                "value": "100원/L 할인"
+            },
+            {
+                "key": "상품권",
+                "value": "15만원 상당 제공"
+            }
+        ],
+        "name": "BeV Ⅲ 카드",
+        "card_company": "KB국민카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/133/card_img/20362/133card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "1,000원당",
+                "value": "3~1마일 적립"
+            },
+            {
+                "key": "KTX, SRT",
+                "value": "10% 할인"
+            },
+            {
+                "key": "공항라운지",
+                "value": "연 2회 무료"
+            }
+        ],
+        "name": "마일앤조이카드(아시아나)",
+        "card_company": "IBK기업은행",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/268/card_img/20491/268card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "1,000원당",
+                "value": "국내 1마일 적립"
+            },
+            {
+                "key": "1,000원당",
+                "value": "해외 2마일 적립"
+            },
+            {
+                "key": "SKYPASS",
+                "value": "회원 할인 서비스"
+            }
+        ],
+        "name": "SKYPASS 롯데 아멕스카드",
+        "card_company": "롯데카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/432/card_img/30755/432card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "매년 연간스페셜",
+                "value": "10만MR 적립(100만원 상당)"
+            },
+            {
+                "key": "공항라운지/발레파킹",
+                "value": "무료 이용"
+            },
+            {
+                "key": "1천원당 최대",
+                "value": "4.5MR 적립"
+            }
+        ],
+        "name": "American Express The Platinum Card®",
+        "card_company": "현대카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/2280/card_img/20686/2280card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "기프트바우처",
+                "value": "100만원상당 제공"
+            },
+            {
+                "key": "해외/면세점/항공사",
+                "value": "2마일리지 적립"
+            },
+            {
+                "key": "본인 및 동반1인",
+                "value": "PP카드 제공"
+            }
+        ],
+        "name": "로얄블루1000카드 [SKYPASS]",
+        "card_company": "우리카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/1731/card_img/22383/1731card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "전세계음식점(푸드팩)",
+                "value": "5% 할인"
+            },
+            {
+                "key": "쇼핑(쇼핑팩)",
+                "value": "5% 할인"
+            },
+            {
+                "key": "주유소/충전소(트레블팩)",
+                "value": "5% 할인"
+            }
+        ],
+        "name": "올바른 MYPICK 카드",
+        "card_company": "NH농협카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/654/card_img/21417/654card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "대형마트",
+                "value": "5% 할인"
+            },
+            {
+                "key": "아웃백",
+                "value": "25% 할인"
+            },
+            {
+                "key": "CGV",
+                "value": "6,000원 할인"
+            }
+        ],
+        "name": "카드의정석 NEW우리V카드",
+        "card_company": "우리카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/73/card_img/20155/73card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "호텔&여행&쇼핑바우처",
+                "value": "최대4매 제공"
+            },
+            {
+                "key": "마일리지or포인트",
+                "value": "선택형 서비스"
+            },
+            {
+                "key": "공항라운지",
+                "value": "무료 이용"
+            }
+        ],
+        "name": "the Purple osée",
+        "card_company": "현대카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/724/card_img/22198/724card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "국내외가맹점",
+                "value": "1마일리지 적립"
+            },
+            {
+                "key": "특정업종",
+                "value": "3~5마일리지 적립"
+            },
+            {
+                "key": "힝공권바우처",
+                "value": "5만원상당 제공(연2회)"
+            }
+        ],
+        "name": "대한항공카드 the First",
+        "card_company": "현대카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/603/card_img/21370/603card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "해외가맹점 최대",
+                "value": "5% 적립"
+            },
+            {
+                "key": "여행",
+                "value": "20% 할인"
+            },
+            {
+                "key": "항공권, 면세점",
+                "value": "0.5% 추가적립"
+            }
+        ],
+        "name": "zgm.휴가중카드",
+        "card_company": "NH농협카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/2464/card_img/28156/2464card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "메리어트 참여호텔",
+                "value": "무료숙박권 제공"
+            },
+            {
+                "key": "메리어트 참여호텔 이용시",
+                "value": "5P/1천원 적립"
+            },
+            {
+                "key": "메리어트 본보이™ 멤버십",
+                "value": "골드엘리트 제공"
+            }
+        ],
+        "name": "메리어트 본보이™ 더 베스트 신한카드",
+        "card_company": "신한카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/716/card_img/22190/716card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "매년 연간스페셜",
+                "value": "1만MR 적립(10만원상당)"
+            },
+            {
+                "key": "다이닝 연 최대",
+                "value": "6만원 할인"
+            },
+            {
+                "key": "1,500원당 최대",
+                "value": "3MR 적립"
+            }
+        ],
+        "name": "American Express® Green Card",
+        "card_company": "현대카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/2282/card_img/20684/2282card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "1,500원당",
+                "value": "15P 적립"
+            },
+            {
+                "key": "1,500원당 최대",
+                "value": "20P 특별적립"
+            },
+            {
+                "key": "바우처",
+                "value": "20만원상당 제공"
+            }
+        ],
+        "name": "BLISS.7 카드(포인트)",
+        "card_company": "IBK기업은행",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/672/card_img/21437/672card.png"
+    }
+]

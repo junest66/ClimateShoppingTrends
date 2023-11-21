@@ -1,8 +1,8 @@
 from flask import Flask, request, render_template
-from card_crawler import fetch_recommended_cards_by_category
 from franchisee_crawler import franchises
 from utill import translate_to_korean
 from utill import map_time_to_number
+from utill import fetch_cards_by_industry
 from model_recommend import my_model
 
 app = Flask(__name__)
@@ -49,7 +49,7 @@ def submit():
         industry=industry,
         user_info=korean_user_info,
         franchises=franchises(),
-        cards=fetch_recommended_cards_by_category(industry),
+        cards=fetch_cards_by_industry(industry),
     )
 
 

@@ -1,0 +1,382 @@
+[
+    {
+        "benefits": [
+            {
+                "key": "모든가맹점",
+                "value": "0.8% 할인"
+            },
+            {
+                "key": "생활업종",
+                "value": "1.3% 할인"
+            },
+            {
+                "key": "국내공항라운지",
+                "value": "연 2회 무료(전월실적 30만원)"
+            }
+        ],
+        "name": "DA@카드의정석",
+        "card_company": "우리카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/87/card_img/20239/87card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "모두드림",
+                "value": "0.7% 적립"
+            },
+            {
+                "key": "더해드림",
+                "value": "2.1% 적립"
+            },
+            {
+                "key": "챙겨드림",
+                "value": "3.5% 적립"
+            }
+        ],
+        "name": "신한카드 Deep Dream",
+        "card_company": "신한카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/32/card_img/20114/32card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "스타벅스",
+                "value": "50% 할인"
+            },
+            {
+                "key": "대중교통",
+                "value": "10% 할인"
+            },
+            {
+                "key": "CGV, 롯데시네마",
+                "value": "5,000원 할인"
+            }
+        ],
+        "name": "삼성카드 taptap O",
+        "card_company": "삼성카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/51/card_img/27707/51card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "업종별",
+                "value": "0.5~3% 기본적립"
+            },
+            {
+                "key": "온라인 간편결제",
+                "value": "5% 적립"
+            },
+            {
+                "key": "해외가맹점",
+                "value": "5% 적립"
+            }
+        ],
+        "name": "현대카드 M BOOST",
+        "card_company": "현대카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/700/card_img/22174/700card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "20개 영역 중",
+                "value": "선택형 할인"
+            },
+            {
+                "key": "택시",
+                "value": "10% 할인"
+            },
+            {
+                "key": "온라인쇼핑",
+                "value": "5% 할인"
+            }
+        ],
+        "name": "Easy all 티타늄카드",
+        "card_company": "KB국민카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/634/card_img/21400/634card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "국내외가맹점",
+                "value": "0.7% 적립"
+            },
+            {
+                "key": "이용금액 1위",
+                "value": "3배 적립"
+            },
+            {
+                "key": "공항라운지",
+                "value": "무료 이용"
+            }
+        ],
+        "name": "올바른 NEW HAVE카드",
+        "card_company": "NH농협카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/635/card_img/28872/635card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "영화",
+                "value": "5,000원 할인"
+            },
+            {
+                "key": "커피",
+                "value": "30% 할인"
+            },
+            {
+                "key": "패스트푸드",
+                "value": "20% 할인"
+            }
+        ],
+        "name": "zgm.play카드",
+        "card_company": "NH농협카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/2544/card_img/29533/2544card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "온·오프라인쇼핑",
+                "value": "10% 할인"
+            },
+            {
+                "key": "간편결제",
+                "value": "5% 추가할인"
+            },
+            {
+                "key": "주말주유",
+                "value": "60원/L 할인"
+            }
+        ],
+        "name": "카드의정석 SHOPPING",
+        "card_company": "우리카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/85/card_img/20167/85card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "온라인쇼핑",
+                "value": "7~20% 할인"
+            },
+            {
+                "key": "주유/통신/해외 등",
+                "value": "선택업종 할인"
+            },
+            {
+                "key": "생활영역",
+                "value": "5~20% 할인"
+            }
+        ],
+        "name": "NH올원 파이카드",
+        "card_company": "NH농협카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/181/card_img/20398/181card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "점심식사/배달앱",
+                "value": "7% 할인"
+            },
+            {
+                "key": "온라인쇼핑",
+                "value": "10% 할인"
+            },
+            {
+                "key": "휴대폰요금/스트리밍",
+                "value": "10% 할인"
+            }
+        ],
+        "name": "BC 바로 클리어 플러스",
+        "card_company": "BC 바로카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/2346/card_img/25293/2346card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "모두드림",
+                "value": "0.7% 적립"
+            },
+            {
+                "key": "더해드림",
+                "value": "2.1% 적립"
+            },
+            {
+                "key": "챙겨드림",
+                "value": "3.5% 적립"
+            }
+        ],
+        "name": "신한카드 Deep Dream(모베러웍스)",
+        "card_company": "신한카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/2295/card_img/22902/2295card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "업종별 최대",
+                "value": "6% 적립"
+            },
+            {
+                "key": "온라인 간편결제",
+                "value": "5% 적립"
+            },
+            {
+                "key": "해외가맹점",
+                "value": "5% 적립"
+            }
+        ],
+        "name": "현대카드 M3 BOOST",
+        "card_company": "현대카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/703/card_img/22177/703card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "점심/배달앱/베이커리",
+                "value": "7% 적립"
+            },
+            {
+                "key": "온/오프라인쇼핑",
+                "value": "7% 적립"
+            },
+            {
+                "key": "커피",
+                "value": "30~7% 적립"
+            }
+        ],
+        "name": "하나멤버스 1Q카드 내맘대로",
+        "card_company": "하나카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/237/card_img/20464/237card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "온라인쇼핑",
+                "value": "60% 할인"
+            },
+            {
+                "key": "미용실",
+                "value": "60% 할인"
+            },
+            {
+                "key": "편의점",
+                "value": "60% 할인"
+            }
+        ],
+        "name": "LOCA LIKIT Shop",
+        "card_company": "롯데카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/2264/card_img/20702/2264card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "전세계음식점(푸드팩)",
+                "value": "5% 할인"
+            },
+            {
+                "key": "쇼핑(쇼핑팩)",
+                "value": "5% 할인"
+            },
+            {
+                "key": "주유소/충전소(트레블팩)",
+                "value": "5% 할인"
+            }
+        ],
+        "name": "올바른 MYPICK 카드",
+        "card_company": "NH농협카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/654/card_img/21417/654card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "대중교통",
+                "value": "200원 할인"
+            },
+            {
+                "key": "영화",
+                "value": "10,000원 할인"
+            },
+            {
+                "key": "커피전문점",
+                "value": "20% 할인"
+            }
+        ],
+        "name": "일상의 기쁨카드(신용)",
+        "card_company": "IBK기업은행",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/266/card_img/23586/266card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "온.오프라인",
+                "value": "10% 할인"
+            },
+            {
+                "key": "생활업종",
+                "value": "10% 할인"
+            },
+            {
+                "key": "해외이용",
+                "value": "5% 캐시백"
+            }
+        ],
+        "name": "신한카드 Shopping",
+        "card_company": "신한카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/18/card_img/20100/18card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "스타벅스",
+                "value": "50% 할인"
+            },
+            {
+                "key": "온라인쇼핑몰",
+                "value": "7% 할인"
+            },
+            {
+                "key": "이동통신요금",
+                "value": "10% 결제일 할인"
+            }
+        ],
+        "name": "모니모카드",
+        "card_company": "삼성카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/2349/card_img/28096/2349card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "주요 커피전문점",
+                "value": "20% 할인"
+            },
+            {
+                "key": "쿠팡, 티몬, 위메프",
+                "value": "20% 할인"
+            },
+            {
+                "key": "편의점",
+                "value": "10% 할인"
+            }
+        ],
+        "name": "IBK무민카드(신용)",
+        "card_company": "IBK기업은행",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/723/card_img/22197/723card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "업종별",
+                "value": "0.5~3% 기본적립"
+            },
+            {
+                "key": "온라인 간편결제",
+                "value": "5% 적립"
+            },
+            {
+                "key": "해외가맹점",
+                "value": "5% 적립"
+            }
+        ],
+        "name": "현대카드 M2 BOOST",
+        "card_company": "현대카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/702/card_img/22176/702card.png"
+    }
+]
