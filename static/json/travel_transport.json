@@ -1,0 +1,378 @@
+[
+    {
+        "benefits": [
+            {
+                "key": "모든가맹점",
+                "value": "0.8% 할인"
+            },
+            {
+                "key": "생활업종",
+                "value": "1.3% 할인"
+            },
+            {
+                "key": "국내공항라운지",
+                "value": "연 2회 무료(전월실적 30만원)"
+            }
+        ],
+        "name": "DA@카드의정석",
+        "card_company": "우리카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/87/card_img/20239/87card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "교통/통신",
+                "value": "10% 할인"
+            },
+            {
+                "key": "주유소/충전소",
+                "value": "60원/L 할인"
+            },
+            {
+                "key": "생활/교육/쇼핑 등",
+                "value": "적립팩 선택"
+            }
+        ],
+        "name": "다담카드",
+        "card_company": "KB국민카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/121/card_img/20353/121card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "1,500원당",
+                "value": "3~1마일 적립"
+            },
+            {
+                "key": "KTX, SRT",
+                "value": "10% 할인"
+            },
+            {
+                "key": "공항라운지",
+                "value": "연 2회 무료"
+            }
+        ],
+        "name": "마일앤조이카드(대한항공)",
+        "card_company": "IBK기업은행",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/267/card_img/20490/267card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "모두드림",
+                "value": "최대 1.1% 적립"
+            },
+            {
+                "key": "더해드림",
+                "value": "최대 3.3% 적립"
+            },
+            {
+                "key": "챙겨드림",
+                "value": "최대 5.5% 적립"
+            }
+        ],
+        "name": "신한카드 Deep Dream Platinum+",
+        "card_company": "신한카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/40/card_img/20121/40card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "1,500원당",
+                "value": "1마일 적립"
+            },
+            {
+                "key": "바우처 최대",
+                "value": "10만원 제공"
+            },
+            {
+                "key": "영화",
+                "value": "2천원 할인"
+            }
+        ],
+        "name": "BLISS.5 카드(마일리지)",
+        "card_company": "IBK기업은행",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/772/card_img/22246/772card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "쇼핑 최대",
+                "value": "14% 할인"
+            },
+            {
+                "key": "통신",
+                "value": "5% 할인"
+            },
+            {
+                "key": "커피",
+                "value": "5% 할인"
+            }
+        ],
+        "name": "별다줄카드",
+        "card_company": "NH농협카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/2305/card_img/23590/2305card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "1,000원당",
+                "value": "3~1마일 적립"
+            },
+            {
+                "key": "KTX, SRT",
+                "value": "10% 할인"
+            },
+            {
+                "key": "공항라운지",
+                "value": "연 2회 무료"
+            }
+        ],
+        "name": "마일앤조이카드(아시아나)",
+        "card_company": "IBK기업은행",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/268/card_img/20491/268card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "점심/배달앱/베이커리",
+                "value": "7% 적립"
+            },
+            {
+                "key": "온/오프라인쇼핑",
+                "value": "7% 적립"
+            },
+            {
+                "key": "커피",
+                "value": "30~7% 적립"
+            }
+        ],
+        "name": "하나멤버스 1Q카드 내맘대로",
+        "card_company": "하나카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/237/card_img/20464/237card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "기프트바우처",
+                "value": "100만원상당 제공"
+            },
+            {
+                "key": "해외/면세점/항공사",
+                "value": "2마일리지 적립"
+            },
+            {
+                "key": "본인 및 동반1인",
+                "value": "PP카드 제공"
+            }
+        ],
+        "name": "로얄블루1000카드 [SKYPASS]",
+        "card_company": "우리카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/1731/card_img/22383/1731card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "NOL포인트",
+                "value": "10% 적립"
+            },
+            {
+                "key": "해외결제",
+                "value": "10% 적립"
+            },
+            {
+                "key": "커피·편의점·쇼핑",
+                "value": "10% 적립"
+            }
+        ],
+        "name": "NOL 카드",
+        "card_company": "현대카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/2521/card_img/28840/2521card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "매년 연간스페셜",
+                "value": "1만MR 적립(10만원상당)"
+            },
+            {
+                "key": "다이닝 연 최대",
+                "value": "6만원 할인"
+            },
+            {
+                "key": "1,500원당 최대",
+                "value": "3MR 적립"
+            }
+        ],
+        "name": "American Express® Green Card",
+        "card_company": "현대카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/2282/card_img/20684/2282card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "대중교통/택시",
+                "value": "10% 할인"
+            },
+            {
+                "key": "이동통신/디지털콘텐츠",
+                "value": "5% 할인"
+            },
+            {
+                "key": "커피전문점",
+                "value": "15% 할인"
+            }
+        ],
+        "name": "알뜰교통플러스 삼성카드",
+        "card_company": "삼성카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/2558/card_img/29647/2558card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "국내가맹점",
+                "value": "0.5% 적립"
+            },
+            {
+                "key": "해외, 면세점",
+                "value": "2% 특별적립"
+            },
+            {
+                "key": "프리미엄기프트",
+                "value": "5만원 증정"
+            }
+        ],
+        "name": "그랑블루 1st",
+        "card_company": "우리카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/717/card_img/22191/717card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "버스,지하철",
+                "value": "10% 청구할인"
+            },
+            {
+                "key": "점심",
+                "value": "5% 청구할인"
+            },
+            {
+                "key": "배달",
+                "value": "7% 청구할인"
+            }
+        ],
+        "name": "NEW 씨티 클리어",
+        "card_company": "씨티카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/101/card_img/20258/101card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "자동납부이용",
+                "value": "최대1만원 캐시백"
+            },
+            {
+                "key": "영화",
+                "value": "3천원 할인"
+            },
+            {
+                "key": "선택형패키지",
+                "value": "5% 할인"
+            }
+        ],
+        "name": "Easy link 티타늄카드",
+        "card_company": "KB국민카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/551/card_img/21256/551card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "저비용항공사",
+                "value": "5% 할인"
+            },
+            {
+                "key": "해외이용",
+                "value": "3% 캐시백"
+            },
+            {
+                "key": "면세점",
+                "value": "5% 할인"
+            }
+        ],
+        "name": "Easy fly 티타늄카드",
+        "card_company": "KB국민카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/489/card_img/21179/489card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "전 가맹점",
+                "value": "1% 할인"
+            },
+            {
+                "key": "대중교통/편의점/커피",
+                "value": "0.5% 추가할인"
+            },
+            {
+                "key": "페이북 쇼핑",
+                "value": "5% 할인"
+            }
+        ],
+        "name": "K-FIRST (모바일전용)",
+        "card_company": "BC 바로카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/2489/card_img/28439/2489card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "EV충전",
+                "value": "20% 하나머니 적립"
+            },
+            {
+                "key": "쇼핑/패션/명품",
+                "value": "5% 하나머니 적립"
+            },
+            {
+                "key": "페이결제 최대",
+                "value": "1.5% 하나머니 적립"
+            }
+        ],
+        "name": "내맘대로 쁨 카드",
+        "card_company": "하나카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/2300/card_img/28825/2300card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "국내외가맹점",
+                "value": "0.5% 캐시백"
+            },
+            {
+                "key": "스페셜가맹점",
+                "value": "5% 캐시백"
+            }
+        ],
+        "name": "카카오뱅크 롯데카드",
+        "card_company": "롯데카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/2226/card_img/21355/2226card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "편의점",
+                "value": "20% 적립"
+            },
+            {
+                "key": "통신/생활요금",
+                "value": "5% 적립"
+            },
+            {
+                "key": "음식점/배달앱",
+                "value": "5% 적립"
+            }
+        ],
+        "name": "청춘대로 1코노미 카드",
+        "card_company": "KB국민카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/132/card_img/20361/132card.png"
+    }
+]

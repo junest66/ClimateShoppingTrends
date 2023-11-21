@@ -1,0 +1,268 @@
+[
+    {
+        "benefits": [
+            {
+                "key": "캐시백형",
+                "value": "1% 캐시백"
+            },
+            {
+                "key": "대한항공형",
+                "value": "1,500원/1마일 적립"
+            },
+            {
+                "key": "기프트옵션",
+                "value": "1회/연 제공"
+            }
+        ],
+        "name": "신한카드 The BEST-F",
+        "card_company": "신한카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/37/card_img/20118/37card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "백화점/할인점",
+                "value": "5% 할인"
+            },
+            {
+                "key": "스타벅스",
+                "value": "20% 할인"
+            },
+            {
+                "key": "GS칼텍스",
+                "value": "60원/L 할인"
+            }
+        ],
+        "name": "신한카드 Love",
+        "card_company": "신한카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/2/card_img/20084/2card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "백화점,할인점,쇼핑몰",
+                "value": "5% 할인"
+            },
+            {
+                "key": "GS칼텍스",
+                "value": "60원/L 할인"
+            },
+            {
+                "key": "영화",
+                "value": "7천원 할인"
+            }
+        ],
+        "name": "신협-신한카드 Love Platinum#",
+        "card_company": "신협",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/1595/card_img/22621/1595card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "LG트윈스 홈경기",
+                "value": "3천원 할인"
+            },
+            {
+                "key": "CGV",
+                "value": "3천원 현장할인"
+            },
+            {
+                "key": "테마파크",
+                "value": "30~50% 할인"
+            }
+        ],
+        "name": "LG트윈스 신한카드",
+        "card_company": "신한카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/2526/card_img/28930/2526card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "신세계백화점",
+                "value": "1% 결제일할인"
+            },
+            {
+                "key": "국내외가맹점",
+                "value": "0.5% 결제일할인"
+            },
+            {
+                "key": "모든 영화관",
+                "value": "10,000원 결제일할인"
+            }
+        ],
+        "name": "신세계 THE S VIP",
+        "card_company": "삼성카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/2543/card_img/29519/2543card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "롯데마트",
+                "value": "10% 청구할인"
+            },
+            {
+                "key": "놀이공원",
+                "value": "50% 할인"
+            },
+            {
+                "key": "미용실 최대",
+                "value": "20% 할인"
+            }
+        ],
+        "name": "롯데마트 롯데카드",
+        "card_company": "롯데카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/1987/card_img/22011/1987card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "백화점,할인점,쇼핑몰",
+                "value": "5% 할인"
+            },
+            {
+                "key": "GS칼텍스",
+                "value": "60원/L 할인"
+            },
+            {
+                "key": "영화",
+                "value": "7천원 할인"
+            }
+        ],
+        "name": "신한카드 Love Platinum#",
+        "card_company": "신한카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/1003/card_img/21532/1003card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "롯데아울렛",
+                "value": "7% 청구할인"
+            },
+            {
+                "key": "롯데몰",
+                "value": "7% 청구할인"
+            },
+            {
+                "key": "대중교통",
+                "value": "5% 청구할인"
+            }
+        ],
+        "name": "롯데아울렛 롯데카드",
+        "card_company": "롯데카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/2059/card_img/21940/2059card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "세븐일레븐",
+                "value": "10% 할인"
+            },
+            {
+                "key": "2년차부터",
+                "value": "연회비면제 서비스"
+            },
+            {
+                "key": "미용실 최대",
+                "value": "20% 할인"
+            }
+        ],
+        "name": "세븐일레븐 멤버쉽롯데카드",
+        "card_company": "롯데카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/2139/card_img/21873/2139card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "국내가맹점",
+                "value": "0.2~0.4% 적립"
+            },
+            {
+                "key": "kt wiz",
+                "value": "입장권/야구용품 할인"
+            },
+            {
+                "key": "마트/외식/쇼핑 등",
+                "value": "5~20% 할인"
+            }
+        ],
+        "name": "참! 좋은 kt wiz 카드(신용)",
+        "card_company": "IBK기업은행",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/263/card_img/20487/263card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "3대백화점",
+                "value": "5% 할인"
+            },
+            {
+                "key": "패밀리레스토랑",
+                "value": "20% 할인"
+            },
+            {
+                "key": "놀이공원",
+                "value": "30~50% 할인"
+            }
+        ],
+        "name": "신한카드 Lady",
+        "card_company": "신한카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/3/card_img/20085/3card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "경차",
+                "value": "유류세 환급"
+            },
+            {
+                "key": "주유소",
+                "value": "리터당 80원 할인"
+            },
+            {
+                "key": "스피드메이트",
+                "value": "엔진오일 할인"
+            }
+        ],
+        "name": "경차 smart 롯데카드",
+        "card_company": "롯데카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/207/card_img/20431/207card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "롭스 매장 최대",
+                "value": "15% 할인"
+            },
+            {
+                "key": "미용실 최대",
+                "value": "20% 할인"
+            },
+            {
+                "key": "공연 최대",
+                "value": "30% 할인"
+            }
+        ],
+        "name": "롭스 롯데카드",
+        "card_company": "롯데카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/1861/card_img/22154/1861card.jpg"
+    },
+    {
+        "benefits": [
+            {
+                "key": "NC다이노스",
+                "value": "2.000원 입장료할인"
+            },
+            {
+                "key": "온라인쇼핑",
+                "value": "10% 할인"
+            },
+            {
+                "key": "CGV,롯데시네마",
+                "value": "30% 할인"
+            }
+        ],
+        "name": "NC다이노스카드",
+        "card_company": "NH농협카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/161/card_img/20381/161card.png"
+    }
+]

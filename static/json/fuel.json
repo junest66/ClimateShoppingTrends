@@ -1,0 +1,374 @@
+[
+    {
+        "benefits": [
+            {
+                "key": "공과금",
+                "value": "10% 할인"
+            },
+            {
+                "key": "마트,편의점",
+                "value": "10% 할인"
+            },
+            {
+                "key": "식음료",
+                "value": "10% 할인"
+            }
+        ],
+        "name": "신한카드 Mr.Life",
+        "card_company": "신한카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/13/card_img/28201/13card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "1,000원당",
+                "value": "1마일 기본적립"
+            },
+            {
+                "key": "커피/주유",
+                "value": "2마일 특별적립"
+            },
+            {
+                "key": "인천공항",
+                "value": "라운지 무료이용"
+            }
+        ],
+        "name": "삼성카드 & MILEAGE PLATINUM (스카이패스)",
+        "card_company": "삼성카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/49/card_img/27705/49card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "모두드림",
+                "value": "0.7% 적립"
+            },
+            {
+                "key": "더해드림",
+                "value": "2.1% 적립"
+            },
+            {
+                "key": "챙겨드림",
+                "value": "3.5% 적립"
+            }
+        ],
+        "name": "신한카드 Deep Dream",
+        "card_company": "신한카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/32/card_img/20114/32card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "교통/통신",
+                "value": "10% 할인"
+            },
+            {
+                "key": "주유소/충전소",
+                "value": "60원/L 할인"
+            },
+            {
+                "key": "생활/교육/쇼핑 등",
+                "value": "적립팩 선택"
+            }
+        ],
+        "name": "다담카드",
+        "card_company": "KB국민카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/121/card_img/20353/121card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "업종별",
+                "value": "0.5~3% 기본적립"
+            },
+            {
+                "key": "온라인 간편결제",
+                "value": "5% 적립"
+            },
+            {
+                "key": "해외가맹점",
+                "value": "5% 적립"
+            }
+        ],
+        "name": "현대카드 M BOOST",
+        "card_company": "현대카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/700/card_img/22174/700card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "온라인쇼핑",
+                "value": "10% 할인"
+            },
+            {
+                "key": "배달앱",
+                "value": "10% 할인"
+            },
+            {
+                "key": "주유소",
+                "value": "100원/L 할인"
+            }
+        ],
+        "name": "현대카드Z family",
+        "card_company": "현대카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/730/card_img/22204/730card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "4개정유사",
+                "value": "10% 할인"
+            },
+            {
+                "key": "차량서비스",
+                "value": "10% 할인"
+            },
+            {
+                "key": "편의점/커피/택시",
+                "value": "5% 할인"
+            }
+        ],
+        "name": "신한카드 Deep Oil",
+        "card_company": "신한카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/39/card_img/20120/39card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "20개 영역 중",
+                "value": "선택형 할인"
+            },
+            {
+                "key": "택시",
+                "value": "10% 할인"
+            },
+            {
+                "key": "온라인쇼핑",
+                "value": "5% 할인"
+            }
+        ],
+        "name": "Easy all 티타늄카드",
+        "card_company": "KB국민카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/634/card_img/21400/634card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "국내외 가맹점",
+                "value": "1% 기본적립"
+            },
+            {
+                "key": "생활필수영역",
+                "value": "2.5% 적립"
+            }
+        ],
+        "name": "현대카드ZERO Edition2(포인트형)",
+        "card_company": "현대카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/610/card_img/27232/608card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "버스,지하철",
+                "value": "건당 200원 할인"
+            },
+            {
+                "key": "주유소/충전소",
+                "value": "60원/L 할인"
+            },
+            {
+                "key": "온라인쇼핑",
+                "value": "20% 할인"
+            }
+        ],
+        "name": "IBK 무직타이거 카드(신용)",
+        "card_company": "IBK기업은행",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/1487/card_img/20427/1487card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "모두드림",
+                "value": "최대 1.1% 적립"
+            },
+            {
+                "key": "더해드림",
+                "value": "최대 3.3% 적립"
+            },
+            {
+                "key": "챙겨드림",
+                "value": "최대 5.5% 적립"
+            }
+        ],
+        "name": "신한카드 Deep Dream Platinum+",
+        "card_company": "신한카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/40/card_img/20121/40card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "전국가맹점",
+                "value": "0.2~2.0% 적립"
+            },
+            {
+                "key": "특정가맹점",
+                "value": "1~5% 적립"
+            },
+            {
+                "key": "현대오일뱅크",
+                "value": "60원/L 적립"
+            }
+        ],
+        "name": "신한카드 Hi-Point",
+        "card_company": "신한카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/1/card_img/20083/1card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "주유",
+                "value": "60원/L 할인"
+            },
+            {
+                "key": "통신요금",
+                "value": "10% 할인"
+            },
+            {
+                "key": "대형마트",
+                "value": "10% 할인"
+            }
+        ],
+        "name": "굿데이올림카드",
+        "card_company": "KB국민카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/115/card_img/20273/115card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "GS칼텍스(LPG포함)",
+                "value": "120원/L 할인"
+            },
+            {
+                "key": "CGV, 롯데시네마",
+                "value": "2,000원 현장할인"
+            },
+            {
+                "key": "주요 놀이공원",
+                "value": "50% 할인"
+            }
+        ],
+        "name": "Oil & Life카드(Oil카드)",
+        "card_company": "IBK기업은행",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/258/card_img/20484/258card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "11번가",
+                "value": "11~22% 할인"
+            },
+            {
+                "key": "기타 온라인쇼핑",
+                "value": "7% 할인"
+            },
+            {
+                "key": "마트/병원/주유 등",
+                "value": "5~10% 할인"
+            }
+        ],
+        "name": "NH올원 Shopping&11번가카드(R2타입)",
+        "card_company": "NH농협카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/179/card_img/20395/179card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "주유소",
+                "value": "60% 할인"
+            },
+            {
+                "key": "영화",
+                "value": "60% 할인"
+            },
+            {
+                "key": "구독서비스",
+                "value": "60% 할인"
+            }
+        ],
+        "name": "LOCA LIKIT Play",
+        "card_company": "롯데카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/2263/card_img/20703/2263card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "모아포인트",
+                "value": "5%~0.8% 적립"
+            },
+            {
+                "key": "주요간편결제",
+                "value": "3% 추가적립"
+            }
+        ],
+        "name": "카드의정석 WOWRI",
+        "card_company": "우리카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/459/card_img/20980/459card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "바우처",
+                "value": "10만원 제공"
+            },
+            {
+                "key": "공항라운지",
+                "value": "무료 이용"
+            },
+            {
+                "key": "M포인트 최대",
+                "value": "2% 적립"
+            }
+        ],
+        "name": "the Green Edition2",
+        "card_company": "현대카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/2260/card_img/27660/2260card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "바우처 최대",
+                "value": "20만원 제공"
+            },
+            {
+                "key": "공항라운지",
+                "value": "무료 이용"
+            },
+            {
+                "key": "M포인트 최대",
+                "value": "2% 적립"
+            }
+        ],
+        "name": "the Red Edition5",
+        "card_company": "현대카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/2259/card_img/27662/2259card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "캐시백형",
+                "value": "1% 캐시백"
+            },
+            {
+                "key": "대한항공형",
+                "value": "1,500원/1마일 적립"
+            },
+            {
+                "key": "기프트옵션",
+                "value": "1회/연 제공"
+            }
+        ],
+        "name": "신한카드 The BEST-F",
+        "card_company": "신한카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/37/card_img/20118/37card.png"
+    }
+]

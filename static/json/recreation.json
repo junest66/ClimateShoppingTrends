@@ -1,0 +1,59 @@
+[
+    {
+        "benefits": [
+            {
+                "key": "영화",
+                "value": "5,000원 할인"
+            },
+            {
+                "key": "커피",
+                "value": "30% 할인"
+            },
+            {
+                "key": "패스트푸드",
+                "value": "20% 할인"
+            }
+        ],
+        "name": "zgm.play카드",
+        "card_company": "NH농협카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/2544/card_img/29533/2544card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "영화",
+                "value": "5,000원 할인"
+            },
+            {
+                "key": "커피",
+                "value": "30% 할인"
+            },
+            {
+                "key": "워터파크",
+                "value": "2인 무료 입장"
+            }
+        ],
+        "name": "zgm.play++카드",
+        "card_company": "NH농협카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/2545/card_img/29534/2545card.png"
+    },
+    {
+        "benefits": [
+            {
+                "key": "놀이업종",
+                "value": "50% 청구할인"
+            },
+            {
+                "key": "스포츠,레저,공연,음악",
+                "value": "20% 청구할인"
+            },
+            {
+                "key": "영화",
+                "value": "4,000원 할인"
+            }
+        ],
+        "name": "청춘대로 꿀잼α카드",
+        "card_company": "KB국민카드",
+        "card_img_url": "https://api.card-gorilla.com:8080/storage/card/145/card_img/23905/145card.png"
+    }
+]
