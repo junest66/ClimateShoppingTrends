@@ -23,7 +23,7 @@ def load_search_results(driver, location, category):
     """
     search_url = f"https://map.naver.com/p/search/{location} {category}"
     driver.get(search_url)
-    time.sleep(5)  # 페이지 로딩 대기
+    time.sleep(3)  # 페이지 로딩 대기
 
 
 def load_place_filter(
@@ -45,7 +45,7 @@ def load_place_filter(
         )
     ).click()
 
-    time.sleep(1)
+    time.sleep(2)
 
     # 정렬속성 선택
     if general_preference == "많이찾는":
@@ -110,6 +110,24 @@ def load_place_filter(
     time.sleep(2)
 
 
+# 음식점 목록의 수 가져오기
+def find_number_of_li_elements(driver):
+    # ul을 찾고 li개수 구하기
+    ul_element = WebDriverWait(driver, 10).until(
+        EC.presence_of_element_located(
+            (By.CSS_SELECTOR, "#_pcmap_list_scroll_container > ul")
+        )
+    )
+    # ul 태그 내의 모든 li 태그를 찾기
+    li_elements = ul_element.find_elements(By.TAG_NAME, "li")
+
+    # li 태그의 수 계산
+    number_of_li_elements = len(li_elements)
+    print("li 태그의 수:", number_of_li_elements)
+
+    return number_of_li_elements
+
+
 def get_restaurant_info(driver, index):
     """
     주어진 인덱스에 해당하는 음식점 정보 추출
@@ -168,6 +186,7 @@ def get_restaurant_info(driver, index):
 
     # 부모 프레임으로 이동
     driver.switch_to.parent_frame()
+    # searchIframe로 이동
     search_iframe = WebDriverWait(driver, 10).until(
         EC.presence_of_element_located((By.XPATH, '//*[@id="searchIframe"]'))
     )
@@ -194,11 +213,12 @@ def eat_craw(
         ambiance_preference_option1,
         ambiance_preference_option2,
     )
+    number_of_li_elements = find_number_of_li_elements(driver)
 
     # 크롤링한 정보를 저장할 리스트
     restaurants_info_list = []
 
-    for index in range(1, 10):
+    for index in range(1, number_of_li_elements + 1):
         # 식당 정보를 담을 사전(dictionary) 생성
         restaurant_dic = {}
 
@@ -222,7 +242,7 @@ def eat_craw(
 local_of_user2 = "서울시 용산구"
 category_of_user2 = "일식"
 general_preference_of_user2 = "많이찾는"
-ambiance_preference_option1_of_user2 = "조용한"
+ambiance_preference_option1_of_user2 = ""
 ambiance_preference_option2_of_user2 = "분위기좋은"
 
 
