@@ -19,6 +19,27 @@
     background-color: #FFFFFF !important;
 }
 
+/* franchisee-container */
+.franchisee-info {
+    padding: 20px 30px;
+    background-color: #FFFFFF;
+}
+
+.franchisee-name {
+    font-size: 30px;
+    font-weight: 500;
+    color: #0068c3;
+}
+
+.industry {
+    font-size: 15px;
+    color: #888888;
+}
+
+.address {
+    font-weight: 600;
+}
+
 /* card-container css */
 .card-container {
     display: none;
