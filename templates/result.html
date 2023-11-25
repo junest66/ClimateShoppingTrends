@@ -50,10 +50,10 @@
                         </div>
                         <div class="franchiess-container">
                             {% for franchise in franchises %}
-                            <div class="franchise-info border-top">
-                                <p>{{ franchise.res_name }}</p>
-                                <p>{{ franchise.res_category }}</p>
-                                <p>{{ franchise.res_address }}</p>
+                            <div class="franchisee-info rounded-4 my-4">
+                                <span class="franchisee-name me-3">{{ franchise.res_name }}</span>
+                                <span class="industry">{{ franchise.res_category }}</span>
+                                <p class="address mt-3 mb-0" class="mt-3 mb-0">{{ franchise.res_address }}</p>
                             </div>
                             {% endfor %}
                         </div>
