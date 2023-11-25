@@ -172,6 +172,6 @@ def place_other_than_franchises(korean_user_info, industry):
         industry,
     )
 
-    print(place_other_than_franchises)
+    # print(place_other_than_franchises)
 
     return place_other_than_franchises
