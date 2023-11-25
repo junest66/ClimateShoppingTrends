@@ -158,22 +158,20 @@ def place_craw(
     return place_info_list
 
 
-# 사용자 입력 예시
-local_of_user2 = "서울시 용산구"
-category_of_user2 = "공연"
+# # 사용자 입력 예시
+# local_of_user2 = "서울시 용산구"
+# category_of_user2 = "공연"
 
 
-def place_other_than_franchises():
+def place_other_than_franchises(korean_user_info, industry):
+    korean_user_info = korean_user_info
+    industry = industry
+
     place_other_than_franchises = place_craw(
-        local_of_user2,
-        category_of_user2,
+        korean_user_info["province"] + " " + korean_user_info["district"],
+        industry,
     )
+
+    print(place_other_than_franchises)
+
     return place_other_than_franchises
-
-
-result = place_craw(
-    local_of_user2,
-    category_of_user2,
-)
-
-print(result)

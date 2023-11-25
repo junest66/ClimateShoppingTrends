@@ -48,7 +48,8 @@ def load_place_filter(
     time.sleep(2)
 
     # 정렬속성 선택
-    if general_preference == "많이찾는":
+    if general_preference == "popular":
+        # 많이찾는
         WebDriverWait(driver, 10).until(
             EC.presence_of_element_located(
                 (
@@ -58,7 +59,8 @@ def load_place_filter(
             )
         ).click()
 
-    elif general_preference == "요즘뜨는":
+    elif general_preference == "trending":
+        # 요즘뜨는
         WebDriverWait(driver, 10).until(
             EC.presence_of_element_located(
                 (
@@ -68,7 +70,8 @@ def load_place_filter(
             )
         ).click()
 
-    elif general_preference == "리뷰많은":
+    elif general_preference == "most_reviewed":
+        # 리뷰많은
         WebDriverWait(driver, 10).until(
             EC.presence_of_element_located(
                 (
@@ -79,7 +82,7 @@ def load_place_filter(
         ).click()
 
     # 분위기 선택
-    if ambiance_preference_option1 == "조용한" or ambiance_preference_option2 == "조용한":
+    if ambiance_preference_option1 == "quiet" or ambiance_preference_option2 == "quiet":
         WebDriverWait(driver, 10).until(
             EC.presence_of_element_located(
                 (
@@ -89,7 +92,10 @@ def load_place_filter(
             )
         ).click()
 
-    if ambiance_preference_option1 == "분위기좋은" or ambiance_preference_option2 == "분위기좋은":
+    if (
+        ambiance_preference_option1 == "good_ambiance"
+        or ambiance_preference_option2 == "good_ambiance"
+    ):
         WebDriverWait(driver, 10).until(
             EC.presence_of_element_located(
                 (
@@ -238,28 +244,22 @@ def eat_craw(
     return restaurants_info_list
 
 
-# 사용자 입력 예시
-local_of_user2 = "서울시 용산구"
-category_of_user2 = "일식"
-general_preference_of_user2 = "많이찾는"
-ambiance_preference_option1_of_user2 = ""
-ambiance_preference_option2_of_user2 = "분위기좋은"
-
-
 def franchises(franchise_info, korean_user_info, industry):
     franchise_info = franchise_info
     korean_user_info = korean_user_info
     industry = industry
 
-    print("음식점 이름", franchise_info)
-    print()
-    print("유저정보 ", korean_user_info)
+    # print("음식점 이름", franchise_info)
+    # print()
+    # print("유저정보 ", korean_user_info)
+    ambiance_preference_option2_of_user2 = "분위기좋은"
 
     franchises = eat_craw(
         korean_user_info["province"] + " " + korean_user_info["district"],
         industry,
-        general_preference_of_user2,
-        ambiance_preference_option1_of_user2,
+        franchise_info["preference"],
+        franchise_info["ambiance"],
+        # 밑에 두번째 분위기 선택하도록 수정해야함 일단 임의로 ambiance_preference_option2_of_user2를 넣어둠
         ambiance_preference_option2_of_user2,
     )
     return franchises
