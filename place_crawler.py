@@ -144,9 +144,9 @@ def place_craw(
 
         place_info = get_place_info(driver, index)
         if place_info:
-            place_dic["place_name"] = place_info[0]
-            place_dic["place_category"] = place_info[1]
-            place_dic["place_address"] = place_info[2]
+            place_dic["name"] = place_info[0]
+            place_dic["category"] = place_info[1]
+            place_dic["address"] = place_info[2]
             place_info_list.append(place_dic)
         else:
             print(f"{index}. 정보를 가져오는 데 실패했습니다.")
