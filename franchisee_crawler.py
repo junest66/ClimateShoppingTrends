@@ -53,7 +53,7 @@ def load_place_filter(
             EC.presence_of_element_located(
                 (
                     By.XPATH,
-                    '//*[@id="_place_portal_root"]/div/div[2]/div[1]/div/div/div[1]/div[2]/a[1]',
+                    '//*[@id="_place_portal_root"]/div/div[2]/div[1]/div/div/div[1]/div[2]/span[1]',
                 )
             )
         ).click()
@@ -63,7 +63,7 @@ def load_place_filter(
             EC.presence_of_element_located(
                 (
                     By.XPATH,
-                    '//*[@id="_place_portal_root"]/div/div[2]/div[1]/div/div/div[1]/div[2]/a[2]',
+                    '//*[@id="_place_portal_root"]/div/div[2]/div[1]/div/div/div[1]/div[2]/span[2]',
                 )
             )
         ).click()
@@ -73,7 +73,7 @@ def load_place_filter(
             EC.presence_of_element_located(
                 (
                     By.XPATH,
-                    '//*[@id="_place_portal_root"]/div/div[2]/div[1]/div/div/div[1]/div[2]/a[5]',
+                    '//*[@id="_place_portal_root"]/div/div[2]/div[1]/div/div/div[1]/div[2]/span[5]',
                 )
             )
         ).click()
@@ -84,7 +84,7 @@ def load_place_filter(
             EC.presence_of_element_located(
                 (
                     By.XPATH,
-                    '//*[@id="_place_portal_root"]/div/div[2]/div[1]/div/div/div[7]/div[2]/a[1]',
+                    '//*[@id="_place_portal_root"]/div/div[2]/div[1]/div/div/div[7]/div[2]/span[1]',
                 )
             )
         ).click()
@@ -94,7 +94,7 @@ def load_place_filter(
             EC.presence_of_element_located(
                 (
                     By.XPATH,
-                    '//*[@id="_place_portal_root"]/div/div[2]/div[1]/div/div/div[7]/div[2]/a[2]',
+                    '//*[@id="_place_portal_root"]/div/div[2]/div[1]/div/div/div[7]/div[2]/span[2]',
                 )
             )
         ).click()
@@ -246,10 +246,18 @@ ambiance_preference_option1_of_user2 = ""
 ambiance_preference_option2_of_user2 = "분위기좋은"
 
 
-def franchises():
+def franchises(franchise_info, korean_user_info, industry):
+    franchise_info = franchise_info
+    korean_user_info = korean_user_info
+    industry = industry
+
+    print("음식점 이름", franchise_info)
+    print()
+    print("유저정보 ", korean_user_info)
+
     franchises = eat_craw(
-        local_of_user2,
-        category_of_user2,
+        korean_user_info["province"] + " " + korean_user_info["district"],
+        industry,
         general_preference_of_user2,
         ambiance_preference_option1_of_user2,
         ambiance_preference_option2_of_user2,

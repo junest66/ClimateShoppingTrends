@@ -48,7 +48,7 @@ def submit():
         "result.html",
         industry=industry,
         user_info=korean_user_info,
-        franchises=franchises(),
+        franchises=franchises(franchise_info, korean_user_info, industry),
         cards=fetch_cards_by_industry(industry),
     )
 
