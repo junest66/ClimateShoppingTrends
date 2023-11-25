@@ -50,10 +50,10 @@
                         </div>
                         <div class="place-container">
                             {% for place in places %}
-                            <div class="franchisee-info rounded-4 my-4">
-                                <span class="franchisee-name me-3">{{ place.res_name }}</span>
-                                <span class="industry">{{ place.res_category }}</span>
-                                <p class="address mt-3 mb-0" class="mt-3 mb-0">{{ place.res_address }}</p>
+                            <div class="place-info rounded-4 my-4">
+                                <span class="franchisee-name me-3">{{ place.name }}</span>
+                                <span class="industry">{{ place.category }}</span>
+                                <p class="address mt-3 mb-0" class="mt-3 mb-0">{{ place.address }}</p>
                             </div>
                             {% endfor %}
                         </div>
