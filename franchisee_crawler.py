@@ -26,9 +26,7 @@ def load_search_results(driver, location, category):
     time.sleep(3)  # 페이지 로딩 대기
 
 
-def load_place_filter(
-    driver, general_preference, ambiance_preference_option1, ambiance_preference_option2
-):
+def load_place_filter(driver, general_preference, ambiance_preference_option):
     """
     플레이스 필터 적용
     """
@@ -82,7 +80,7 @@ def load_place_filter(
         ).click()
 
     # 분위기 선택
-    if ambiance_preference_option1 == "quiet" or ambiance_preference_option2 == "quiet":
+    if ambiance_preference_option == "quiet":
         WebDriverWait(driver, 10).until(
             EC.presence_of_element_located(
                 (
@@ -92,10 +90,7 @@ def load_place_filter(
             )
         ).click()
 
-    if (
-        ambiance_preference_option1 == "good_ambiance"
-        or ambiance_preference_option2 == "good_ambiance"
-    ):
+    if ambiance_preference_option == "good_ambiance":
         WebDriverWait(driver, 10).until(
             EC.presence_of_element_located(
                 (
@@ -205,8 +200,7 @@ def eat_craw(
     location,
     category,
     general_preference,
-    ambiance_preference_option1,
-    ambiance_preference_option2,
+    ambiance_preference_option,
 ):
     """
     주어진 위치와 카테고리를 기준으로 네이버 플레이스에서 음식점 정보 크롤링
@@ -216,8 +210,7 @@ def eat_craw(
     load_place_filter(
         driver,
         general_preference,
-        ambiance_preference_option1,
-        ambiance_preference_option2,
+        ambiance_preference_option,
     )
     number_of_li_elements = find_number_of_li_elements(driver)
 
@@ -230,9 +223,9 @@ def eat_craw(
 
         restaurant_info = get_restaurant_info(driver, index)
         if restaurant_info:
-            restaurant_dic["res_name"] = restaurant_info[0]
-            restaurant_dic["res_category"] = restaurant_info[1]
-            restaurant_dic["res_address"] = restaurant_info[2]
+            restaurant_dic["name"] = restaurant_info[0]
+            restaurant_dic["category"] = restaurant_info[1]
+            restaurant_dic["address"] = restaurant_info[2]
             restaurants_info_list.append(restaurant_dic)
         else:
             print(f"{index}. 정보를 가져오는 데 실패했습니다.")
@@ -249,17 +242,11 @@ def franchises(franchise_info, korean_user_info, industry):
     korean_user_info = korean_user_info
     industry = industry
 
-    # print("음식점 이름", franchise_info)
-    # print()
-    # print("유저정보 ", korean_user_info)
-    ambiance_preference_option2_of_user2 = "분위기좋은"
-
     franchises = eat_craw(
         korean_user_info["province"] + " " + korean_user_info["district"],
         industry,
         franchise_info["preference"],
         franchise_info["ambiance"],
-        # 밑에 두번째 분위기 선택하도록 수정해야함 일단 임의로 ambiance_preference_option2_of_user2를 넣어둠
-        ambiance_preference_option2_of_user2,
     )
+
     return franchises
