@@ -80,7 +80,7 @@ def load_place_filter(driver, general_preference, ambiance_preference_option):
         ).click()
 
     # 분위기 선택
-    if ambiance_preference_option == "quiet":
+    if ambiance_preference_option == "good_ambiance":
         WebDriverWait(driver, 10).until(
             EC.presence_of_element_located(
                 (
@@ -90,7 +90,7 @@ def load_place_filter(driver, general_preference, ambiance_preference_option):
             )
         ).click()
 
-    if ambiance_preference_option == "good_ambiance":
+    if ambiance_preference_option == "quiet":
         WebDriverWait(driver, 10).until(
             EC.presence_of_element_located(
                 (
@@ -242,12 +242,13 @@ def franchises(franchise_info, korean_user_info, industry):
     korean_user_info = korean_user_info
     industry = industry
 
+    print("무여: " + franchise_info["ambiance"])
+
     franchises = eat_craw(
         korean_user_info["province"] + " " + korean_user_info["district"],
         industry,
         franchise_info["preference"],
         franchise_info["ambiance"],
     )
-    print()
 
     return franchises
