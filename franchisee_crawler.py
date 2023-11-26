@@ -250,5 +250,5 @@ def franchises(franchise_info, korean_user_info, industry):
         franchise_info["preference"],
         franchise_info["ambiance"],
     )
-    print()
+
     return franchises
