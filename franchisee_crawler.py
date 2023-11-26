@@ -242,8 +242,6 @@ def franchises(franchise_info, korean_user_info, industry):
     korean_user_info = korean_user_info
     industry = industry
 
-    print("무여: " + franchise_info["ambiance"])
-
     franchises = eat_craw(
         korean_user_info["province"] + " " + korean_user_info["district"],
         industry,
