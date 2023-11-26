@@ -7,7 +7,7 @@
     color: #E2E2E2;
     cursor: pointer;
     padding: 10px 20px;
-    font-size: 25px;
+    font-size: 20px;
     outline: none;
     width: 50%;
     font-weight: 600;
@@ -20,10 +20,6 @@
 }
 
 /* place-container */
-.place-info {
-    padding: 20px 30px;
-    background-color: #FFFFFF;
-}
 
 .place-name {
     font-size: 30px;
@@ -36,8 +32,38 @@
     color: #888888;
 }
 
+.adress-data {
+    width: 200px;
+}
+
 .address {
     font-weight: 600;
+}
+
+.value {
+    font-weight: 600;
+}
+
+.grade svg {
+    fill: #fc4c4e;
+    width: 14px;
+    height: 14px;
+    margin-bottom: 5px;
+}
+
+.franchisee-image {
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+.franchisee-image img {
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /* card-container css */
@@ -45,7 +71,7 @@
     display: none;
 }
 
-.card-info {
+.card-info, .place-info {
     padding: 40px 30px;
     background-color: #FFFFFF;
 }
