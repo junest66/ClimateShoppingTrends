@@ -19,13 +19,13 @@
     background-color: #FFFFFF !important;
 }
 
-/* franchisee-container */
-.franchisee-info {
+/* place-container */
+.place-info {
     padding: 20px 30px;
     background-color: #FFFFFF;
 }
 
-.franchisee-name {
+.place-name {
     font-size: 30px;
     font-weight: 500;
     color: #0068c3;
@@ -44,6 +44,7 @@
 .card-container {
     display: none;
 }
+
 .card-info {
     padding: 40px 30px;
     background-color: #FFFFFF;
@@ -61,7 +62,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
 
 .card-name {

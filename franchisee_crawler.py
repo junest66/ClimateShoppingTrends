@@ -26,9 +26,7 @@ def load_search_results(driver, location, category):
     time.sleep(3)  # 페이지 로딩 대기
 
 
-def load_place_filter(
-    driver, general_preference, ambiance_preference_option1, ambiance_preference_option2
-):
+def load_place_filter(driver, general_preference, ambiance_preference_option):
     """
     플레이스 필터 적용
     """
@@ -48,53 +46,56 @@ def load_place_filter(
     time.sleep(2)
 
     # 정렬속성 선택
-    if general_preference == "많이찾는":
+    if general_preference == "popular":
+        # 많이찾는
         WebDriverWait(driver, 10).until(
             EC.presence_of_element_located(
                 (
                     By.XPATH,
-                    '//*[@id="_place_portal_root"]/div/div[2]/div[1]/div/div/div[1]/div[2]/a[1]',
+                    '//*[@id="_place_portal_root"]/div/div[2]/div[1]/div/div/div[1]/div[2]/span[1]',
                 )
             )
         ).click()
 
-    elif general_preference == "요즘뜨는":
+    elif general_preference == "trending":
+        # 요즘뜨는
         WebDriverWait(driver, 10).until(
             EC.presence_of_element_located(
                 (
                     By.XPATH,
-                    '//*[@id="_place_portal_root"]/div/div[2]/div[1]/div/div/div[1]/div[2]/a[2]',
+                    '//*[@id="_place_portal_root"]/div/div[2]/div[1]/div/div/div[1]/div[2]/span[2]',
                 )
             )
         ).click()
 
-    elif general_preference == "리뷰많은":
+    elif general_preference == "most_reviewed":
+        # 리뷰많은
         WebDriverWait(driver, 10).until(
             EC.presence_of_element_located(
                 (
                     By.XPATH,
-                    '//*[@id="_place_portal_root"]/div/div[2]/div[1]/div/div/div[1]/div[2]/a[5]',
+                    '//*[@id="_place_portal_root"]/div/div[2]/div[1]/div/div/div[1]/div[2]/span[5]',
                 )
             )
         ).click()
 
     # 분위기 선택
-    if ambiance_preference_option1 == "조용한" or ambiance_preference_option2 == "조용한":
+    if ambiance_preference_option == "quiet":
         WebDriverWait(driver, 10).until(
             EC.presence_of_element_located(
                 (
                     By.XPATH,
-                    '//*[@id="_place_portal_root"]/div/div[2]/div[1]/div/div/div[7]/div[2]/a[1]',
+                    '//*[@id="_place_portal_root"]/div/div[2]/div[1]/div/div/div[7]/div[2]/span[1]',
                 )
             )
         ).click()
 
-    if ambiance_preference_option1 == "분위기좋은" or ambiance_preference_option2 == "분위기좋은":
+    if ambiance_preference_option == "good_ambiance":
         WebDriverWait(driver, 10).until(
             EC.presence_of_element_located(
                 (
                     By.XPATH,
-                    '//*[@id="_place_portal_root"]/div/div[2]/div[1]/div/div/div[7]/div[2]/a[2]',
+                    '//*[@id="_place_portal_root"]/div/div[2]/div[1]/div/div/div[7]/div[2]/span[2]',
                 )
             )
         ).click()
@@ -199,8 +200,7 @@ def eat_craw(
     location,
     category,
     general_preference,
-    ambiance_preference_option1,
-    ambiance_preference_option2,
+    ambiance_preference_option,
 ):
     """
     주어진 위치와 카테고리를 기준으로 네이버 플레이스에서 음식점 정보 크롤링
@@ -210,8 +210,7 @@ def eat_craw(
     load_place_filter(
         driver,
         general_preference,
-        ambiance_preference_option1,
-        ambiance_preference_option2,
+        ambiance_preference_option,
     )
     number_of_li_elements = find_number_of_li_elements(driver)
 
@@ -224,9 +223,9 @@ def eat_craw(
 
         restaurant_info = get_restaurant_info(driver, index)
         if restaurant_info:
-            restaurant_dic["res_name"] = restaurant_info[0]
-            restaurant_dic["res_category"] = restaurant_info[1]
-            restaurant_dic["res_address"] = restaurant_info[2]
+            restaurant_dic["name"] = restaurant_info[0]
+            restaurant_dic["category"] = restaurant_info[1]
+            restaurant_dic["address"] = restaurant_info[2]
             restaurants_info_list.append(restaurant_dic)
         else:
             print(f"{index}. 정보를 가져오는 데 실패했습니다.")
@@ -238,20 +237,17 @@ def eat_craw(
     return restaurants_info_list
 
 
-# 사용자 입력 예시
-local_of_user2 = "서울시 용산구"
-category_of_user2 = "일식"
-general_preference_of_user2 = "많이찾는"
-ambiance_preference_option1_of_user2 = ""
-ambiance_preference_option2_of_user2 = "분위기좋은"
+def franchises(franchise_info, korean_user_info, industry):
+    franchise_info = franchise_info
+    korean_user_info = korean_user_info
+    industry = industry
 
-
-def franchises():
     franchises = eat_craw(
-        local_of_user2,
-        category_of_user2,
-        general_preference_of_user2,
-        ambiance_preference_option1_of_user2,
-        ambiance_preference_option2_of_user2,
+        korean_user_info["province"] + " " + korean_user_info["district"],
+        industry,
+        franchise_info["preference"],
+        franchise_info["ambiance"],
     )
+    print()
+
     return franchises

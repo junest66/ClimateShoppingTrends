@@ -144,9 +144,9 @@ def place_craw(
 
         place_info = get_place_info(driver, index)
         if place_info:
-            place_dic["place_name"] = place_info[0]
-            place_dic["place_category"] = place_info[1]
-            place_dic["place_address"] = place_info[2]
+            place_dic["name"] = place_info[0]
+            place_dic["category"] = place_info[1]
+            place_dic["address"] = place_info[2]
             place_info_list.append(place_dic)
         else:
             print(f"{index}. 정보를 가져오는 데 실패했습니다.")
@@ -158,22 +158,20 @@ def place_craw(
     return place_info_list
 
 
-# 사용자 입력 예시
-local_of_user2 = "서울시 용산구"
-category_of_user2 = "공연"
+# # 사용자 입력 예시
+# local_of_user2 = "서울시 용산구"
+# category_of_user2 = "공연"
 
 
-def place_other_than_franchises():
+def place_other_than_franchises(korean_user_info, industry):
+    korean_user_info = korean_user_info
+    industry = industry
+
     place_other_than_franchises = place_craw(
-        local_of_user2,
-        category_of_user2,
+        korean_user_info["province"] + " " + korean_user_info["district"],
+        industry,
     )
+
+    # print(place_other_than_franchises)
+
     return place_other_than_franchises
-
-
-result = place_craw(
-    local_of_user2,
-    category_of_user2,
-)
-
-print(result)
