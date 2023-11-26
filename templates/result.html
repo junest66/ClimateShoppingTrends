@@ -50,10 +50,31 @@
                         </div>
                         <div class="place-container">
                             {% for place in places %}
-                            <div class="place-info rounded-4 my-4">
-                                <span class="place-name me-3">{{ place.name }}</span>
-                                <span class="industry">{{ place.category }}</span>
-                                <p class="address mt-3 mb-0" class="mt-3 mb-0">{{ place.address }}</p>
+                            <div class="place-info rounded-4 d-flex my-4">
+                                <div class="franchisee-image">
+                                    <img src="{{place.img_url }}">
+                                </div>
+                                <div class="flex-grow-1 ps-5">
+                                    <div class="mb-3">
+                                        <div class="mb-3">
+                                            <span class="place-name me-3">{{ place.name }}</span>
+                                            <span class="industry">{{ place.category }}</span>
+                                        </div>
+                                        {% if place.grade %}
+                                            <span class="grade">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 13" class="GWkzU" aria-hidden="true">
+                                                    <path d="M8.26 4.68h4.26a.48.48 0 01.28.87L9.35 8.02l1.33 4.01a.48.48 0 01-.18.54.48.48 0 01-.56 0l-3.44-2.5-3.44 2.5a.48.48 0 01-.74-.54l1.33-4L.2 5.54a.48.48 0 01.28-.87h4.26l1.3-4a.48.48 0 01.92 0l1.3 4z"></path>
+                                                </svg>
+                                                <span class="value">{{ place.grade }}</span>
+                                            </span>
+                                        {% endif %}
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="adress-data flex-fill">
+                                            <p class="address mb-3" class="mt-3 mb-0">{{ place.address }}</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             {% endfor %}
                         </div>

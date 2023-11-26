@@ -7,7 +7,7 @@ import json
 def translate_to_korean(data_list):
     korean_data = {
         "age": {
-            "1": "20이하",
+            "1": "20대이하",
             "2": "20대",
             "3": "30대",
             "4": "40대",

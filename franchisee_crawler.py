@@ -3,8 +3,8 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.common.keys import Keys
 import time
+import re
 
 
 def init_driver():
@@ -129,6 +129,26 @@ def find_number_of_li_elements(driver):
     return number_of_li_elements
 
 
+def get_image_url(driver, xpath1, xpath2, timeout=20):
+    """
+    지정된 시간 동안 웹 요소를 기다리고, 해당 요소에서 이미지 URL을 추출합니다.
+    """
+    try:
+        # WebDriverWait를 사용하여 이미지 요소 대기
+        image_element = WebDriverWait(driver, timeout).until(
+            EC.presence_of_element_located((By.XPATH, f'{xpath1} | {xpath2}'))
+        )
+
+        # 이미지 스타일 속성에서 URL 추출
+        image_style = image_element.get_attribute("style")
+        match = re.search(r'url\((.*?)\)', image_style)
+        return match.group(1).strip("'\"") if match else None
+
+    except Exception as e:
+        print(f"이미지를 찾을 수 없습니다: ", e)
+        return None
+
+
 def get_restaurant_info(driver, index):
     """
     주어진 인덱스에 해당하는 음식점 정보 추출
@@ -185,6 +205,22 @@ def get_restaurant_info(driver, index):
         .text
     )
 
+    # 평점 확인 및 추출
+    grade_selector = ".PXMot.LXIwF"
+    grades = driver.find_elements(By.CSS_SELECTOR, grade_selector)
+    if grades:
+        full_grade_text = grades[0].text
+        # 정규 표현식을 사용하여 숫자만 추출합니다.
+        grade = re.search(r'\d+(\.\d+)?', full_grade_text).group()
+    else:
+        grade = None
+
+    XPATH1 = '//*[@id="ibu_1"]'
+    XPATH2 = '//*[@id="ugc_1"]'
+    image_url = get_image_url(driver, XPATH1, XPATH2)
+
+    print(f"인덱스 {index}: 이름: {name}, 유형: {category}, 주소: {address}, 이미지 주소: {image_url}, 평점: {grade}")
+
     # 부모 프레임으로 이동
     driver.switch_to.parent_frame()
     # searchIframe로 이동
@@ -193,8 +229,7 @@ def get_restaurant_info(driver, index):
     )
     driver.switch_to.frame(search_iframe)
 
-    return name, category, address
-
+    return name, category, address, image_url,grade
 
 def eat_craw(
     location,
@@ -226,6 +261,8 @@ def eat_craw(
             restaurant_dic["name"] = restaurant_info[0]
             restaurant_dic["category"] = restaurant_info[1]
             restaurant_dic["address"] = restaurant_info[2]
+            restaurant_dic["img_url"] = restaurant_info[3]
+            restaurant_dic["grade"] = restaurant_info[4]
             restaurants_info_list.append(restaurant_dic)
         else:
             print(f"{index}. 정보를 가져오는 데 실패했습니다.")
