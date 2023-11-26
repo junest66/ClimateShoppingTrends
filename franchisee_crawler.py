@@ -136,11 +136,11 @@ def get_restaurant_info(driver, index):
     # 음식점 클릭
     try:
         restaurant_selector = f"#_pcmap_list_scroll_container > ul > li:nth-child({index}) > div.CHC5F > a.tzwk0 > div > div > span.TYaxT"
-        restaurant_element = WebDriverWait(driver, 10).until(
+        restaurant_element = WebDriverWait(driver, 20).until(
             EC.presence_of_element_located((By.CSS_SELECTOR, restaurant_selector))
         )
-        actions = driver.find_element(By.CSS_SELECTOR, "body")
-        actions.send_keys(Keys.END)
+        driver.execute_script("arguments[0].scrollIntoView();", restaurant_element)
+        time.sleep(1)  # 필요에 따라 적절한 대기 시간을 설정할 수 있습니다.
         restaurant_element.click()
     except Exception as e:
         print(f"인덱스 {index}의 요소를 찾을 수 없습니다: ", e)
