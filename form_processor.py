@@ -46,7 +46,8 @@ def submit():
 
     # place가 먹는 곳 관련이면 franchises_crawler, 그 외는place_crawler를 실행하여 결과를 반환
     def which_crawler_to_use(industry, franchise_info, korean_user_info):
-        food_related_industries = ["한식", "양식", "일식", "중식", "카페/디저트", "유흥주점"]
+        industry = industry.replace('/', ',')
+        food_related_industries = ["한식", "양식", "일식", "중식", "카페,디저트"]
 
         if industry in food_related_industries:
             place_info = franchises(franchise_info, korean_user_info, industry)

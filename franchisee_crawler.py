@@ -129,14 +129,16 @@ def find_number_of_li_elements(driver):
     return number_of_li_elements
 
 
-def get_image_url(driver, xpath1, xpath2, timeout=20):
+def get_image_url(driver, timeout=10):
     """
     지정된 시간 동안 웹 요소를 기다리고, 해당 요소에서 이미지 URL을 추출합니다.
     """
+    css_selector = ".K0PDV, .K0PDV._div"  # 대상 요소의 CSS 선택자
+
     try:
         # WebDriverWait를 사용하여 이미지 요소 대기
         image_element = WebDriverWait(driver, timeout).until(
-            EC.presence_of_element_located((By.XPATH, f'{xpath1} | {xpath2}'))
+            EC.presence_of_element_located((By.CSS_SELECTOR, css_selector))
         )
 
         # 이미지 스타일 속성에서 URL 추출
@@ -215,9 +217,7 @@ def get_restaurant_info(driver, index):
     else:
         grade = None
 
-    XPATH1 = '//*[@id="ibu_1"]'
-    XPATH2 = '//*[@id="ugc_1"]'
-    image_url = get_image_url(driver, XPATH1, XPATH2)
+    image_url = get_image_url(driver)
 
     print(f"인덱스 {index}: 이름: {name}, 유형: {category}, 주소: {address}, 이미지 주소: {image_url}, 평점: {grade}")
 

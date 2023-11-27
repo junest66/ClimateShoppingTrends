@@ -5,6 +5,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.keys import Keys
 import time
+import re
 
 ##먹는 거 이외에 대해서 크롤링할 예정
 
@@ -52,6 +53,28 @@ def find_number_of_li_elements(driver):
     return number_of_li_elements
 
 
+def get_image_url(driver, timeout=10):
+    """
+    지정된 시간 동안 웹 요소를 기다리고, 해당 요소에서 이미지 URL을 추출합니다.
+    """
+    css_selector = ".K0PDV, .K0PDV._div"  # 대상 요소의 CSS 선택자
+
+    try:
+        # WebDriverWait를 사용하여 이미지 요소 대기
+        image_element = WebDriverWait(driver, timeout).until(
+            EC.presence_of_element_located((By.CSS_SELECTOR, css_selector))
+        )
+
+        # 이미지 스타일 속성에서 URL 추출
+        image_style = image_element.get_attribute("style")
+        match = re.search(r'url\((.*?)\)', image_style)
+        return match.group(1).strip("'\"") if match else None
+
+    except Exception as e:
+        print(f"이미지를 찾을 수 없습니다: ", e)
+        return None
+
+
 def get_place_info(driver, index):
     """
     주어진 인덱스에 해당하는 장소 정보 추출
@@ -67,8 +90,8 @@ def get_place_info(driver, index):
         restaurant_element = WebDriverWait(driver, 10).until(
             EC.presence_of_element_located((By.CSS_SELECTOR, restaurant_selector))
         )
-        actions = driver.find_element(By.CSS_SELECTOR, "body")
-        actions.send_keys(Keys.END)
+        driver.execute_script("arguments[0].scrollIntoView();", restaurant_element)
+        time.sleep(1)  # 필요에 따라 적절한 대기 시간을 설정할 수 있습니다.
         restaurant_element.click()
     except Exception as e:
         print(f"인덱스 {index}의 요소를 찾을 수 없습니다: ", e)
@@ -113,6 +136,20 @@ def get_place_info(driver, index):
         .text
     )
 
+    # 평점 확인 및 추출
+    grade_selector = ".PXMot.LXIwF"
+    grades = driver.find_elements(By.CSS_SELECTOR, grade_selector)
+    if grades:
+        full_grade_text = grades[0].text
+        # 정규 표현식을 사용하여 숫자만 추출합니다.
+        grade = re.search(r'\d+(\.\d+)?', full_grade_text).group()
+    else:
+        grade = None
+
+    image_url = get_image_url(driver)
+
+    print(f"인덱스 {index}: 이름: {name}, 유형: {category}, 주소: {address}, 이미지 주소: {image_url}, 평점: {grade}")
+
     # 부모 프레임으로 이동
     driver.switch_to.parent_frame()
     # searchIframe로 이동
@@ -121,7 +158,7 @@ def get_place_info(driver, index):
     )
     driver.switch_to.frame(search_iframe)
 
-    return name, category, address
+    return name, category, address, image_url, grade
 
 
 def place_craw(
@@ -147,6 +184,8 @@ def place_craw(
             place_dic["name"] = place_info[0]
             place_dic["category"] = place_info[1]
             place_dic["address"] = place_info[2]
+            place_dic["img_url"] = place_info[3]
+            place_dic["grade"] = place_info[4]
             place_info_list.append(place_dic)
         else:
             print(f"{index}. 정보를 가져오는 데 실패했습니다.")
