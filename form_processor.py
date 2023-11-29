@@ -22,19 +22,19 @@ def submit():
     district = request.form.get("currentDistrict")
     weather_info = get_current_local_weather(province, district)
     model_data = {
-        "apr_tizn_c": map_time_to_number(),  # 시간
-        "province": province,  # 광역시도
-        "district": district,  # 시군구
+        "time": map_time_to_number(),  # 시간
+        "city": province,  # 광역시도
+        "area": district,  # 시군구
         "gender": request.form.get("gender"),  # 성별
         "age": request.form.get("age"),  # 나이대 그룹
         "married": request.form.get("married"),  # 결혼 여부
-        "children": request.form.get("children"),  # 자녀 보유 여부
-        "influx": request.form.get("influx"),  # 거주지 일치 여부
+        "child": request.form.get("children"),  # 자녀 보유 여부
+        "alien": request.form.get("influx"),  # 거주지 일치 여부
         "temp": weather_info.get("temp"),
         "feels_like": weather_info.get("feels_like"),
         "rain_1h": weather_info.get("rain_1h"),
         "snow_1h": weather_info.get("snow_1h"),
-        "main_weather": weather_info.get("main_weather"),
+        "main": weather_info.get("main_weather"),
     }
     # print(model_data)
 
