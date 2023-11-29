@@ -15,7 +15,7 @@ def get_coords(province, city_district):
     for item in data:
         if item["name"] == search_name:
             return item["lat"], item["lon"]
-    raise ValueError(f"Coordinates not found for {province} {city_district}")
+    raise ValueError(f"{province} {city_district}에 대한 위도 경도를 찾을 수 없음")
 
 
 # 날씨 정보를 가져오는 함수
