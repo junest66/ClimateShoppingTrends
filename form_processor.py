@@ -7,9 +7,12 @@ from utill import fetch_cards_by_industry
 from model_recommend import my_model
 from place_crawler import place_other_than_franchises
 from weather_fetcher import get_current_local_weather
+from dotenv import load_dotenv
+import os
 
+load_dotenv()
 app = Flask(__name__)
-app.secret_key = "15771577"  # 세션을 위한 시크릿 키 설정
+app.config["SECRET_KEY"] = os.getenv("FLASK_SECRET_KEY")
 app.config["SESSION_PERMANENT"] = False  # 세션 지속성 설정
 app.config["SESSION_TYPE"] = "filesystem"  # 세션 저장 방식 설정
 Session(app)  # 세션 확장 초기화
