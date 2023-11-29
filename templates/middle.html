@@ -10,7 +10,16 @@
 <body>
     <!-- middle.html -->
     <form action="/submit" method="post">
-        <button type="submit">Submit</button>
+        <input type="hidden" name="selected_industry" value="{{ industry1 }}">
+        <button type="submit">Submit1</button>
+    </form>
+    <form action="/submit" method="post">
+        <input type="hidden" name="selected_industry" value="{{ industry2 }}">
+        <button type="submit">Submit2</button>
+    </form>
+    <form action="/submit" method="post">
+        <input type="hidden" name="selected_industry" value="{{ industry3 }}">
+        <button type="submit">Submit3</button>
     </form>
 </body>
 
