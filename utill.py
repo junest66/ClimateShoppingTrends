@@ -87,15 +87,15 @@ def fetch_cards_by_industry(industry):
     }
 
     english_industry_name = industry_name_mapping.get(industry, None)
-    if english_industry_name:
-        file_path = os.path.join("static", "json", f"{english_industry_name}.json")
-        if os.path.exists(file_path):
-            with open(file_path, "r", encoding="utf-8") as file:
-                cards = json.load(file)
-                return cards
-        else:
-            print(f"파일이 존재하지 않음: {file_path}")
-            return []
-    else:
-        print(f"업종명 매핑이 존재하지 않음: {industry}")
-        return []
+    if not english_industry_name:
+        raise ValueError(f"업종명 매핑이 존재하지 않음: {industry}")
+
+    file_path = os.path.join(
+        os.path.dirname(__file__), "static", "json", f"{english_industry_name}.json"
+    )
+    if not os.path.exists(file_path):
+        raise FileNotFoundError(f"파일이 존재하지 않음: {file_path}")
+
+    with open(file_path, "r", encoding="utf-8") as file:
+        cards = json.load(file)
+        return cards
