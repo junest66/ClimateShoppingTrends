@@ -1,4 +1,5 @@
-from flask import Flask, request, render_template
+from flask import Flask, request, render_template, session
+from flask_session import Session  # 세션 관리를 위한 Flask-Session 확장
 from franchisee_crawler import franchises
 from utill import translate_to_korean
 from utill import map_time_to_number
@@ -8,6 +9,10 @@ from place_crawler import place_other_than_franchises
 from weather_fetcher import get_current_local_weather
 
 app = Flask(__name__)
+app.secret_key = "15771577"  # 세션을 위한 시크릿 키 설정
+app.config["SESSION_PERMANENT"] = False  # 세션 지속성 설정
+app.config["SESSION_TYPE"] = "filesystem"  # 세션 저장 방식 설정
+Session(app)  # 세션 확장 초기화
 
 
 @app.route("/")
@@ -16,8 +21,8 @@ def form():
     return render_template("form.html")
 
 
-@app.route("/submit", methods=["POST"])
-def submit():
+@app.route("/middle", methods=["POST"])
+def middle():
     province = request.form.get("currentProvince")
     district = request.form.get("currentDistrict")
     weather_info = get_current_local_weather(province, district)
@@ -51,12 +56,28 @@ def submit():
         "ambiance": request.form.get("ambiance_preferences"),  # 분위기 필터
     }
 
+    # 세션에 데이터 저장
+    session["model_data"] = model_data
+    session["franchise_info"] = franchise_info
+    session["industry"] = industry
+
+    # 'middle.html' 템플릿을 렌더링합니다.
+    return render_template("middle.html")
+
+
+@app.route("/submit", methods=["POST"])
+def submit():
+    # 세션에서 데이터 검색
+    model_data = session.get("model_data", {})
+    franchise_info = session.get("franchise_info", {})
+    industry = session.get("industry", None)
+
     # 사용자 정보를 한글로 변환합니다.
     korean_user_info = translate_to_korean(model_data)
 
     # place가 먹는 곳 관련이면 franchises_crawler, 그 외는place_crawler를 실행하여 결과를 반환
     def which_crawler_to_use(industry, franchise_info, korean_user_info):
-        industry = industry.replace('/', ',')
+        industry = industry.replace("/", ",")
         food_related_industries = ["한식", "양식", "일식", "중식", "카페,디저트"]
 
         if industry in food_related_industries:
