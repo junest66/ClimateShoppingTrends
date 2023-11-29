@@ -67,7 +67,7 @@ def get_image_url(driver, timeout=10):
 
         # 이미지 스타일 속성에서 URL 추출
         image_style = image_element.get_attribute("style")
-        match = re.search(r'url\((.*?)\)', image_style)
+        match = re.search(r"url\((.*?)\)", image_style)
         return match.group(1).strip("'\"") if match else None
 
     except Exception as e:
@@ -142,13 +142,15 @@ def get_place_info(driver, index):
     if grades:
         full_grade_text = grades[0].text
         # 정규 표현식을 사용하여 숫자만 추출합니다.
-        grade = re.search(r'\d+(\.\d+)?', full_grade_text).group()
+        grade = re.search(r"\d+(\.\d+)?", full_grade_text).group()
     else:
         grade = None
 
     image_url = get_image_url(driver)
 
-    print(f"인덱스 {index}: 이름: {name}, 유형: {category}, 주소: {address}, 이미지 주소: {image_url}, 평점: {grade}")
+    print(
+        f"인덱스 {index}: 이름: {name}, 유형: {category}, 주소: {address}, 이미지 주소: {image_url}, 평점: {grade}"
+    )
 
     # 부모 프레임으로 이동
     driver.switch_to.parent_frame()
@@ -207,7 +209,7 @@ def place_other_than_franchises(korean_user_info, industry):
     industry = industry
 
     place_other_than_franchises = place_craw(
-        korean_user_info["province"] + " " + korean_user_info["district"],
+        korean_user_info["city"] + " " + korean_user_info["area"],
         industry,
     )
 
