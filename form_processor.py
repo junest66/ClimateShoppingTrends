@@ -44,7 +44,7 @@ def middle():
     # print(model_data)
 
     # 데이터를 모델에 전달하고 결과를 받습니다.
-    industry = my_model(model_data)
+    industry1, industry2, industry3 = my_model(model_data)
 
     # 가맹점 추천용 폼 데이터
     franchise_info = {
@@ -59,10 +59,14 @@ def middle():
     # 세션에 데이터 저장
     session["model_data"] = model_data
     session["franchise_info"] = franchise_info
-    session["industry"] = industry
+    session["industry1"] = industry1
+    session["industry2"] = industry2
+    session["industry3"] = industry3
 
     # 'middle.html' 템플릿을 렌더링합니다.
-    return render_template("middle.html")
+    return render_template(
+        "middle.html", industry1=industry1, industry2=industry2, industry3=industry3
+    )
 
 
 @app.route("/submit", methods=["POST"])
@@ -70,30 +74,34 @@ def submit():
     # 세션에서 데이터 검색
     model_data = session.get("model_data", {})
     franchise_info = session.get("franchise_info", {})
-    industry = session.get("industry", None)
+    selected_industry = request.form.get("selected_industry")
 
     # 사용자 정보를 한글로 변환합니다.
     korean_user_info = translate_to_korean(model_data)
 
     # place가 먹는 곳 관련이면 franchises_crawler, 그 외는place_crawler를 실행하여 결과를 반환
-    def which_crawler_to_use(industry, franchise_info, korean_user_info):
-        industry = industry.replace("/", ",")
+    def which_crawler_to_use(selected_industry, franchise_info, korean_user_info):
+        selected_industry = selected_industry.replace("/", ",")
         food_related_industries = ["한식", "양식", "일식", "중식", "카페,디저트"]
 
-        if industry in food_related_industries:
-            place_info = franchises(franchise_info, korean_user_info, industry)
+        if selected_industry in food_related_industries:
+            place_info = franchises(franchise_info, korean_user_info, selected_industry)
             return place_info
         else:
-            place_info = place_other_than_franchises(korean_user_info, industry)
+            place_info = place_other_than_franchises(
+                korean_user_info, selected_industry
+            )
             return place_info
 
     # 결과 페이지 렌더링
     return render_template(
         "result.html",
-        industry=industry,
+        selected_industry=selected_industry,
         user_info=korean_user_info,
-        places=which_crawler_to_use(industry, franchise_info, korean_user_info),
-        cards=fetch_cards_by_industry(industry),
+        places=which_crawler_to_use(
+            selected_industry, franchise_info, korean_user_info
+        ),
+        cards=fetch_cards_by_industry(selected_industry),
     )
 
 
