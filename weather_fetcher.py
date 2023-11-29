@@ -1,6 +1,7 @@
 import json
 import os
 import requests
+from dotenv import load_dotenv
 
 
 # 위도 경도를 찾는 함수
@@ -20,8 +21,9 @@ def get_coords(province, city_district):
 
 # 날씨 정보를 가져오는 함수
 def get_weather(lat, lon):
-    api_key = "f008c6fef5d45c810a55681a43c6c267"
-    url = f"https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={api_key}"
+    load_dotenv()  # 환경 변수 로드
+    openweather_api_key = os.getenv('OPENWEATHER_API_KEY')
+    url = f"https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={openweather_api_key}"
     response = requests.get(url)
     return response.json()
 
