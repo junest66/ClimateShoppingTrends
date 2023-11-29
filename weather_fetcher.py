@@ -15,7 +15,7 @@ def get_coords(province, city_district):
     for item in data:
         if item["name"] == search_name:
             return item["lat"], item["lon"]
-    return None, None
+    raise ValueError(f"Coordinates not found for {province} {city_district}")
 
 
 # 날씨 정보를 가져오는 함수
@@ -29,10 +29,6 @@ def get_weather(lat, lon):
 # 지역명을 받아 날씨 정보를 반환하는 함수
 def get_current_local_weather(province, city_district):
     lat, lon = get_coords(province, city_district)
-    if lat is None or lon is None:
-        print("해당 위도와 경도의 날씨정보를 찾을 수 없습니다.")
-        return None
-
     weather_data = get_weather(lat, lon)
     return {
         "temp": weather_data.get("main", {}).get("temp"),
