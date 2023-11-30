@@ -45,9 +45,10 @@ def middle():
         "main": weather_info.get("main_weather"),
     }
     # print(model_data)
+    korean_user_info = translate_to_korean(model_data)
 
     # 데이터를 모델에 전달하고 결과를 받습니다.
-    industry1, industry2, industry3 = my_model(model_data)
+    recommended_categories = my_model(model_data)
 
     # 가맹점 추천용 폼 데이터
     franchise_info = {
@@ -62,13 +63,11 @@ def middle():
     # 세션에 데이터 저장
     session["model_data"] = model_data
     session["franchise_info"] = franchise_info
-    session["industry1"] = industry1
-    session["industry2"] = industry2
-    session["industry3"] = industry3
+    session["recommended_categories"] = recommended_categories
 
     # 'middle.html' 템플릿을 렌더링합니다.
     return render_template(
-        "middle.html", industry1=industry1, industry2=industry2, industry3=industry3
+        "middle.html", user_info=korean_user_info, recommended_categories = recommended_categories
     )
 
 
