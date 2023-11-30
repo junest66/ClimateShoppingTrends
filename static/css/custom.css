@@ -1,25 +1,52 @@
 /* custom. css */
 
+/* form.html */
+.feature {
+    background-color: #595959;
+    background-image: linear-gradient(180deg, #595959 0%, #434343 100%);
+    color: white;
+    border-radius: 3px;
+    padding: 1rem;
+    margin-bottom: 3px;
+}
+
+.bg-container {
+    background-color: #F6F6F6;
+}
+
 .tab button {
     border: none;
     background: transparent;
-    border-bottom: 2px solid #E2E2E2;
-    color: #E2E2E2;
+    border-bottom: 3px solid #BEBEBE;
+    color: #BEBEBE;
     cursor: pointer;
     padding: 10px 20px;
     font-size: 20px;
     outline: none;
     width: 50%;
     font-weight: 600;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .active-tab {
     color: black !important;
-    border-bottom: 2px solid black !important;
-    background-color: #FFFFFF !important;
+    background-color: #EDECEA !important;
+    border-bottom: 3px solid black !important;
+}
+
+.crawler-container {
+    border-bottom: 2px solid #ddd;
+    border-left: 2px solid #ddd;
+    border-right: 2px solid #ddd;
+    background-color: #EDECEA;
 }
 
 /* place-container */
+
+.place-cotainer {
+    padding: 1.5rem 0 0 0;
+}
 
 .place-name {
     font-size: 30px;
@@ -69,9 +96,11 @@
 /* card-container css */
 .card-container {
     display: none;
+    padding: 1.5rem 0 0 0;
 }
 
-.card-info, .place-info {
+.card-info,
+.place-info {
     padding: 40px 30px;
     background-color: #FFFFFF;
 }
@@ -112,4 +141,72 @@
 .benefits-num {
     font-size: 25px;
     font-weight: 500;
+}
+
+/* middle.html */
+.user-info {
+    background-color: #f9f9f9;
+    border: none !important;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.card-header {
+    background-color: #595959;
+    border: none;
+    color: white;
+    font-size: 25px;
+}
+
+.background-white {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-top: none;
+    overflow: hidden;
+    border-radius: 0 0 var(--bs-card-inner-border-radius) var(--bs-card-inner-border-radius);
+}
+
+.card-main {
+    padding: 16px;
+}
+
+.card-main p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.icon {
+    width: 30px;
+    text-align: center;
+    display: inline-block;
+}
+
+.gold {
+    color: #ffd700;
+    /* 금색 */
+}
+
+.silver {
+    color: #c0c0c0;
+    /* 은색 */
+}
+
+.bronze {
+    color: #cd7f32;
+    /* 동색 */
+}
+
+.card-title {
+    margin-bottom: 15px;
+}
+
+.btn-space-gray {
+    background-color: #595959;
+    color: white;
+    border-color: #595959;
+}
+
+.btn-space-gray:hover {
+    background-color: #626262;
+    border-color: #626262;
 }

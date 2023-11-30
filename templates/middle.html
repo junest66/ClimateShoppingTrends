@@ -2,25 +2,103 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>결과</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link href="/static/css/styles.css" rel="stylesheet" />
+    <link href="/static/css/custom.css" rel="stylesheet" />
 </head>
 
-<body>
-    <!-- middle.html -->
-    <form action="/submit" method="post">
-        <input type="hidden" name="selected_industry" value="{{ industry1 }}">
-        <button type="submit">Submit1</button>
-    </form>
-    <form action="/submit" method="post">
-        <input type="hidden" name="selected_industry" value="{{ industry2 }}">
-        <button type="submit">Submit2</button>
-    </form>
-    <form action="/submit" method="post">
-        <input type="hidden" name="selected_industry" value="{{ industry3 }}">
-        <button type="submit">Submit3</button>
-    </form>
+<body class="d-flex flex-column">
+    <main class="flex-shrink-0">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container px-5">
+                <a class="navbar-brand" href="index.html">ClimateCommerce Suggestions</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation"><span
+                        class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="register.html">Recommend</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page content-->
+        <section class="py-5">
+            <div class="container px-5">
+                <div class="bg-container rounded-3 py-5 px-4 px-md-5 mb-5">
+                    <h1 class="fw-bolder text-center">Your Personalized Recommendations</h1>
+                    <p class="lead fw-normal text-muted mb-4 text-center">Based on your details, here are our
+                        suggestions</p>
+                    <div class="user-info card">
+                        <h3 class="text-center card-header">추천 결제 업종</h3>
+                        <div class="card-main background-white">
+                            <p><i class="fas fa-user icon"></i> {{ user_info.age }} {{ user_info.gender }}</p>
+                            <p><i class="fas fa-map-marker-alt icon"></i> {{ user_info.city }} {{ user_info.area }} {{ user_info.alien }}</p>
+                            <p><i class="fas fa-ring icon"></i> {{ user_info.married }}</p>
+                            <p><i class="fas fa-child icon"></i> {{ user_info.child }}</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        {% for category in recommended_categories %}
+                        <!-- 각 업종을 나타내는 사각형 레이아웃 -->
+                        <div class="col-md-4 mb-3">
+                            <div class="card">
+                                <div class="card-main text-center">
+                                    <!-- 순위와 업종 표시 -->
+                                    <h5 class="card-title">
+                                        {% if loop.index == 1 %}
+                                            <i class="fas fa-medal gold"></i> <!-- 금메달 아이콘 -->
+                                        {% elif loop.index == 2 %}
+                                            <i class="fas fa-medal silver"></i> <!-- 은메달 아이콘 -->
+                                        {% elif loop.index == 3 %}
+                                            <i class="fas fa-medal bronze"></i> <!-- 동메달 아이콘 -->
+                                        {% else %}
+                                            <i class="fas fa-medal"></i> <!-- 기본 메달 아이콘 -->
+                                        {% endif %}
+                                        {{ loop.index }}순위: {{ category }}
+                                    </h5>
+                                    <form action="/submit" method="post">
+                                        <input type="hidden" name="selected_industry" value="{{ category }}">
+                                        <button type="submit" class="btn btn-space-gray">자세히 보기</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer-->
+    <footer class="bg-dark py-4 mt-auto">
+        <div class="container px-5">
+            <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                <div class="col-auto">
+                    <div class="small m-0 text-white">Copyright &copy; Your Website 2023</div>
+                </div>
+                <div class="col-auto">
+                    <a class="link-light small" href="#!">Privacy</a>
+                    <span class="text-white mx-1">&middot;</span>
+                    <a class="link-light small" href="#!">Terms</a>
+                    <span class="text-white mx-1">&middot;</span>
+                    <a class="link-light small" href="#!">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 </body>
 
 </html>
