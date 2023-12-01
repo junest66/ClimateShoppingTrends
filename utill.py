@@ -3,6 +3,42 @@ import os
 import json
 
 
+# selected_indusrty를 크롤링을 위한 업종으로 재매핑하는 함수
+def industry_remapping(selected_industry):
+    # 업종 매핑을 위한 사전 정의
+    industry_mapping = {
+        "연료": "주유",
+        "숙박": "숙박",
+        "중식": "중식",
+        "한식": "한식",
+        "일식": "일식",
+        "양식": "양식",
+        "카페/디저트": "카페,디저트",
+        "공연": "공연",
+        "렌터카": "렌터카",
+        "유흥주점": "유흥주점",
+        "레져업소": "레져",
+        "자동차유지/정비": "자동차정비",
+        "기타일반음식": "음식점",
+        "관람(내부)": "관람",
+        "관람(외부)": "관람",
+        "유통업": "마트",
+        "음료/주류": "바",
+        "여행/교통": "버스터미널",
+        "오락위락시설": "오락",
+        "취미교양용품": "문구",
+    }
+
+    # 매핑된 값 찾기, 없을 경우 None 반환
+    remapped_industry = industry_mapping.get(selected_industry)
+
+    # 매핑된 값이 없는 경우 에러 발생
+    if remapped_industry is None:
+        raise ValueError(f"업종명 매핑이 존재하지 않음: {selected_industry}")
+
+    return remapped_industry
+
+
 # form에서 받은 데이터를 한국어로 변환하는 함수
 def translate_to_korean(data_list):
     korean_data = {

@@ -26,7 +26,7 @@ def load_search_results(driver, location, category):
     time.sleep(3)  # 페이지 로딩 대기
 
 
-def load_place_filter(driver, general_preference, ambiance_preference_option):
+def load_place_filter(driver, general_preference, ambiance_preference_option, hasOwnCar):
     """
     플레이스 필터 적용
     """
@@ -99,6 +99,18 @@ def load_place_filter(driver, general_preference, ambiance_preference_option):
                 )
             )
         ).click()
+
+    #주차 여부 확인
+    if hasOwnCar == "yes":
+        WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located(
+                (
+                    By.XPATH,
+                    '//*[@id="_place_portal_root"]/div/div[2]/div[1]/div/div/div[8]/div[2]/span[11]',
+                )
+            )
+        ).click()
+
 
     # 플레이스 필터 적용 버튼 클릭
     WebDriverWait(driver, 10).until(
@@ -239,6 +251,7 @@ def eat_craw(
     category,
     general_preference,
     ambiance_preference_option,
+    hasOwnCar
 ):
     """
     주어진 위치와 카테고리를 기준으로 네이버 플레이스에서 음식점 정보 크롤링
@@ -249,6 +262,7 @@ def eat_craw(
         driver,
         general_preference,
         ambiance_preference_option,
+        hasOwnCar
     )
     number_of_li_elements = find_number_of_li_elements(driver)
 
@@ -287,6 +301,7 @@ def franchises(franchise_info, korean_user_info, industry):
         industry,
         franchise_info["preference"],
         franchise_info["ambiance"],
+        franchise_info["car"]
     )
 
     return franchises

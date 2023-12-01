@@ -124,12 +124,12 @@ def get_place_info(driver, index):
     )
 
     address = (
-        WebDriverWait(driver, 1)
+        WebDriverWait(driver, 2)
         .until(
             EC.presence_of_element_located(
                 (
                     By.CSS_SELECTOR,
-                    "#app-root > div > div > div > div:nth-child(5) > div > div:nth-child(2) > div.place_section_content > div > div.O8qbU.tQY7D > div > a > span.LDgIH",
+                    "#app-root > div > div > div > div:nth-child(5) > div > div:nth-child(2) > div > div > div.O8qbU.tQY7D > div > a > span.LDgIH",
                 )
             )
         )
