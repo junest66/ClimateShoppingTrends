@@ -81,11 +81,8 @@ def submit():
     franchise_info = session.get("franchise_info", {})
     selected_industry = request.form.get("selected_industry")
 
+    # 크롤링을 위해 선택된 업종을 재매핑함
     remapped_industry = industry_remapping(selected_industry)
-    ###############################################
-    # 여기에 업종변환하는 코드 추가하면 될듯         #
-    # selected_industry -> 크롤링 잘되도록 업종 변환#
-    ###############################################
 
     # 사용자 정보를 한글로 변환합니다.
     korean_user_info = translate_to_korean(model_data)
