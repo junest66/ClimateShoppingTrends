@@ -1,6 +1,7 @@
 from datetime import datetime
 import os
 import json
+import csv
 
 
 # selected_indusrty를 크롤링을 위한 업종으로 재매핑하는 함수
@@ -135,3 +136,37 @@ def fetch_cards_by_industry(industry):
     with open(file_path, "r", encoding="utf-8") as file:
         cards = json.load(file)
         return cards
+
+
+def get_place_data_by_industry_and_region(korean_user_info, industry):
+    file_path = os.path.join(os.path.dirname(__file__), "static", "csv", "place_data.csv")
+    # 딕셔너리 초기화
+    data_list = []
+    region = korean_user_info["city"] + " " + korean_user_info["area"]
+    # 업종 변환
+    if industry in ["관람(내부)", "관람(외부)"]:
+        industry = "관람"
+
+    # CSV 파일 읽기
+    with open(file_path, mode='r', encoding='utf-8') as file:
+        csv_reader = csv.DictReader(file)
+        for row in csv_reader:
+            row_industry = row['industry']
+            row_region = row['region']
+            name = row['name']
+            category = row['category']
+            address = row['address']
+            img_url = row['img_url']
+            grade = row['grade']
+
+            # 인자로 받은 업종과 지역에 맞는 데이터인 경우 리스트에 추가
+            if row_industry == industry and row_region == region:
+                data_list.append({
+                    'name': name,
+                    'category': category,
+                    'address': address,
+                    'img_url': img_url,
+                    'grade': grade
+                })
+
+    return data_list

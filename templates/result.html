@@ -68,10 +68,9 @@
                                                 <span class="place-name me-3">{{ place.name }}</span>
                                                 <span class="industry">{{ place.category }}</span>
                                             </div>
-                                            {% if place.grade %}
+                                            {% if place.grade is defined and place.grade != '0.0' %}
                                             <span class="grade">
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 13"
-                                                    class="GWkzU" aria-hidden="true">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 13" class="GWkzU" aria-hidden="true">
                                                     <path
                                                         d="M8.26 4.68h4.26a.48.48 0 01.28.87L9.35 8.02l1.33 4.01a.48.48 0 01-.18.54.48.48 0 01-.56 0l-3.44-2.5-3.44 2.5a.48.48 0 01-.74-.54l1.33-4L.2 5.54a.48.48 0 01.28-.87h4.26l1.3-4a.48.48 0 01.92 0l1.3 4z">
                                                     </path>
