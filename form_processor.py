@@ -5,8 +5,8 @@ from utill import translate_to_korean
 from utill import map_time_to_number
 from utill import fetch_cards_by_industry
 from utill import industry_remapping
+from utill import get_place_data_by_industry_and_region
 from model_recommend import my_model
-from place_crawler import place_other_than_franchises
 from weather_fetcher import get_current_local_weather
 from dotenv import load_dotenv
 import os
@@ -81,25 +81,21 @@ def submit():
     franchise_info = session.get("franchise_info", {})
     selected_industry = request.form.get("selected_industry")
 
-    # 크롤링을 위해 선택된 업종을 재매핑함
-    remapped_industry = industry_remapping(selected_industry)
-
     # 사용자 정보를 한글로 변환합니다.
     korean_user_info = translate_to_korean(model_data)
 
     # place가 먹는 곳 관련이면 franchises_crawler, 그 외는place_crawler를 실행하여 결과를 반환
-    def which_crawler_to_use(remapped_industry, franchise_info, korean_user_info):
-        remapped_industry = remapped_industry.replace("/", ",")
+    def which_crawler_to_use(selected_industry, franchise_info, korean_user_info):
         food_related_industries = ["한식", "양식", "일식", "중식", "카페,디저트", "음식점"]
+        remapped_industry = industry_remapping(selected_industry)
+        remapped_industry = remapped_industry.replace("/", ",")
 
         if remapped_industry in food_related_industries:
             place_info = franchises(franchise_info, korean_user_info, remapped_industry)
             return place_info
         else:
-            place_info = place_other_than_franchises(
-                korean_user_info, remapped_industry
-            )
-            return place_info
+            return get_place_data_by_industry_and_region(korean_user_info, selected_industry)
+
 
     # 결과 페이지 렌더링
     return render_template(
@@ -107,7 +103,7 @@ def submit():
         selected_industry=selected_industry,
         user_info=korean_user_info,
         places=which_crawler_to_use(
-            remapped_industry, franchise_info, korean_user_info
+            selected_industry, franchise_info, korean_user_info
         ),
         cards=fetch_cards_by_industry(selected_industry),
     )
