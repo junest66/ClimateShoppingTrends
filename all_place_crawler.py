@@ -3,19 +3,27 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.common.keys import Keys
 import time
 import re
 import csv
 import json
 import os
-import threading
 
 
 def save_to_csv(data, filename):
     file_exists = os.path.isfile(filename)
-    with open(filename, mode='a' if file_exists else 'w', newline='', encoding='utf-8-sig') as file:
-        fieldnames = ['industry', 'region', 'name', 'category', 'address', 'img_url', 'grade']
+    with open(
+        filename, mode="a" if file_exists else "w", newline="", encoding="utf-8-sig"
+    ) as file:
+        fieldnames = [
+            "industry",
+            "region",
+            "name",
+            "category",
+            "address",
+            "img_url",
+            "grade",
+        ]
         writer = csv.DictWriter(file, fieldnames=fieldnames)
         if not file_exists:
             writer.writeheader()
@@ -223,10 +231,10 @@ def place_craw(driver, location, category):
         else:
             print(f"{index}. 정보를 가져오는 데 실패했습니다.")
 
-
     # 업종 이름을 포함하는 파일 이름 생성
     csv_filename = f"{category.replace('/', '_')}_data.csv"
     save_to_csv(place_info_list, csv_filename)
+
 
 # # 사용자 입력 예시
 # local_of_user2 = "서울시 용산구"
@@ -244,6 +252,7 @@ def place_other_than_franchises(name, industry):
     # print(place_other_than_franchises)
 
     return place_other_than_franchises
+
 
 def industry_remapping(selected_industry):
     # 업종 매핑을 위한 사전 정의
@@ -273,11 +282,13 @@ def industry_remapping(selected_industry):
 
     return remapped_industry
 
+
 def read_json_and_get_names(json_file):
-    with open(json_file, 'r', encoding='utf-8') as file:
+    with open(json_file, "r", encoding="utf-8") as file:
         data = json.load(file)
-        names = [item['name'] for item in data]
+        names = [item["name"] for item in data]
         return names
+
 
 industry_mapping = {
     "연료": "주유",
@@ -299,9 +310,10 @@ industry_mapping = {
 # 업종 리스트 생성
 industries = list(industry_mapping.keys())
 
+
 def main():
     driver = init_driver()
-    names = read_json_and_get_names('static/json/regions_coordinates.json')
+    names = read_json_and_get_names("static/json/regions_coordinates.json")
     start_index_for_names = 0  # Change this to the desired starting index
 
     for industry in industries:
@@ -311,7 +323,9 @@ def main():
             try:
                 name = names[index]
                 place_craw(driver, name, industry)
-                print(f"Processing: Index = {index}, Industry = {industry}, Region = {name}")
+                print(
+                    f"Processing: Index = {index}, Industry = {industry}, Region = {name}"
+                )
                 index += 1  # 다음 인덱스로 이동
             except Exception as e:
                 print(f"Error occurred at Index = {index}: {str(e)}")
@@ -320,6 +334,7 @@ def main():
 
     driver.quit()
     print("작업이 끝났습니다.")
+
 
 # def main():
 #     driver = init_driver()
