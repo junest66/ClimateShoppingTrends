@@ -6,7 +6,7 @@ from utill import map_time_to_number
 from utill import fetch_cards_by_industry
 from utill import industry_remapping
 from utill import get_place_data_by_industry_and_region
-from model_recommend import my_model
+from model_recommend import catboost
 from weather_fetcher import get_current_local_weather
 from dotenv import load_dotenv
 import os
@@ -49,7 +49,7 @@ def middle():
     korean_user_info = translate_to_korean(model_data)
 
     # 데이터를 모델에 전달하고 결과를 받습니다.
-    recommended_categories = my_model(model_data)
+    recommended_categories = catboost(model_data)
 
     # 가맹점 추천용 폼 데이터
     franchise_info = {
