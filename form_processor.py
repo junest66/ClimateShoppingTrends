@@ -31,8 +31,9 @@ def middle():
     province = request.form.get("currentProvince")
     district = request.form.get("currentDistrict")
     weather_info = get_current_local_weather(province, district)
+    current_time = map_time_to_number()
     model_data = {
-        "time": map_time_to_number(),  # 시간
+        "time": current_time,  # 시간
         "city": province,  # 광역시도
         "area": district,  # 시군구
         "gender": request.form.get("gender"),  # 성별
@@ -62,7 +63,7 @@ def middle():
         "ambiance": request.form.get("ambiance_preferences"),  # 분위기 필터
     }
     # 날씨 상태에 따른 이미지 URL 결정
-    weather_img_url = get_weather_img_url(weather_info['main_weather'])
+    weather_img_url = get_weather_img_url(weather_info['main_weather'], current_time)
 
     # 날씨 정보에 이미지 주소 추가
     weather_info['weather_img_url'] = weather_img_url
