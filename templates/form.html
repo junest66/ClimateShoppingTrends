@@ -37,8 +37,8 @@
                 <div class="bg-container rounded-3 py-5 px-4 px-md-5 mb-5">
                     <div class="text-center mb-5">
                         <div class="feature text-white rounded-3 mb-3"><i class="bi bi-person-circle"></i></div>
-                        <h1 class="fw-bolder">Enter Your Details</h1>
-                        <p class="lead fw-normal text-muted mb-0">We'll Make Recommendations for You!</p>
+                        <h1 class="fw-bolder">당신에 대해 알려주세요</h1>
+                        <p class="lead fw-normal text-muted mb-0">맞춤형 추천을 해드릴게요</p>
                     </div>
                     <div class="row gx-5 justify-content-center">
                         <div class="col-lg-8 col-xl-6">
@@ -47,12 +47,12 @@
                                 <div class="form-floating mb-3">
                                     <select class="form-control" id="gender" name="gender"
                                         data-sb-validations="required">
-                                        <option value="">Select your gender...</option>
-                                        <option value="1">Male</option>
-                                        <option value="2">Female</option>
+                                        <option value="">성별을 선택하세요...</option>
+                                        <option value="1">남자</option>
+                                        <option value="2">여자</option>
                                     </select>
-                                    <label for="gender">Gender</label>
-                                    <div class="invalid-feedback" data-sb-feedback="gender:required">Gender is required.
+                                    <label for="gender">성별</label>
+                                    <div class="invalid-feedback" data-sb-feedback="gender:required">성별은 필수입니다.
                                     </div>
                                 </div>
 
@@ -60,7 +60,7 @@
                                 <div class="form-floating mb-3">
                                     <select class="form-control custom-form-control" id="age" name="age"
                                         data-sb-validations="required">
-                                        <option value="">Select your age group...</option>
+                                        <option value="">연령대를 선택하세요...</option>
                                         <option value="1">20대 이하</option>
                                         <option value="2">20대</option>
                                         <option value="3">30대</option>
@@ -69,72 +69,70 @@
                                         <option value="6">60대</option>
                                         <option value="7">70대 이상</option>
                                     </select>
-                                    <label class="custom-form-label" for="age">Age</label>
-                                    <div class="invalid-feedback" data-sb-feedback="age:required">Age group is required.
+                                    <label class="custom-form-label" for="age">나이대</label>
+                                    <div class="invalid-feedback" data-sb-feedback="age:required">나이대는 필수입니다.
                                     </div>
                                 </div>
-                                <div class="mb-3"><strong>Current Location</strong></div>
+                                <div class="mb-3"><strong>현재 위치</strong></div>
                                 <!-- 현재 위치 입력 - 광역시도명 -->
                                 <div class="mb-3">
                                     <input class="form-control" name="currentProvince" type="text"
-                                        placeholder="Province" data-sb-validations="required" />
-                                    <div class="invalid-feedback" data-sb-feedback="currentProvince:required">Province
-                                        is required.</div>
+                                        placeholder="광역시도명" data-sb-validations="required" />
+                                    <div class="invalid-feedback" data-sb-feedback="currentProvince:required">광역시도명은 필수입니다.</div>
                                 </div>
 
                                 <!-- 현재 위치 입력 - 시군구명 -->
                                 <div class="mb-3">
                                     <input class="form-control" name="currentDistrict" type="text"
-                                        placeholder="District" data-sb-validations="required" />
-                                    <div class="invalid-feedback" data-sb-feedback="currentDistrict:required">District
-                                        is required.</div>
+                                        placeholder="시군구명" data-sb-validations="required" />
+                                    <div class="invalid-feedback" data-sb-feedback="currentDistrict:required">시군구명은 필수입니다.</div>
                                 </div>
 
                                 <!-- 유입 여부 체크 -->
                                 <div class="mb-3">
-                                    <strong><label class="form-label">Is this your residence area?</label></strong>
+                                    <strong><label class="form-label">이 지역에 거주중입니까?</label></strong>
                                     <br>
                                     <div class="form-check d-inline-block mr-2">
                                         <input class="form-check-input" type="radio" name="influx" id="influxYes"
                                             value="1">
-                                        <label class="form-check-label" for="influxYes">Yes</label>
+                                        <label class="form-check-label" for="influxYes">예</label>
                                     </div>
                                     <div class="form-check d-inline-block">
                                         <input class="form-check-input" type="radio" name="influx" id="influxNo"
                                             value="0">
-                                        <label class="form-check-label" for="influxNo">No</label>
+                                        <label class="form-check-label" for="influxNo">아니요</label>
                                     </div>
                                 </div>
 
                                 <!-- 결혼 여부 라디오 버튼 -->
                                 <div class="mb-3">
-                                    <strong><label class="form-label">Married</label></strong>
+                                    <strong><label class="form-label">결혼 유무</label></strong>
                                     <br>
                                     <div class="form-check d-inline-block mr-2">
                                         <input class="form-check-input" type="radio" name="married" id="marriedYes"
                                             value="1">
-                                        <label class="form-check-label" for="marriedYes">Yes</label>
+                                        <label class="form-check-label" for="marriedYes">예</label>
                                     </div>
                                     <div class="form-check d-inline-block">
                                         <input class="form-check-input" type="radio" name="married" id="marriedNo"
                                             value="0">
-                                        <label class="form-check-label" for="marriedNo">No</label>
+                                        <label class="form-check-label" for="marriedNo">아니요</label>
                                     </div>
                                 </div>
 
                                 <!-- 자녀 보유 여부 라디오 버튼 -->
                                 <div class="mb-3">
-                                    <strong><label class="form-label">Have Children</label></strong>
+                                    <strong><label class="form-label">자녀 유무</label></strong>
                                     <br>
                                     <div class="form-check d-inline-block mr-2">
                                         <input class="form-check-input" type="radio" name="children" id="childrenYes"
                                             value="1">
-                                        <label class="form-check-label" for="childrenYes">Yes</label>
+                                        <label class="form-check-label" for="childrenYes">예</label>
                                     </div>
                                     <div class="form-check d-inline-block">
                                         <input class="form-check-input" type="radio" name="children" id="childrenNo"
                                             value="0">
-                                        <label class="form-check-label" for="childrenNo">No</label>
+                                        <label class="form-check-label" for="childrenNo">아니요</label>
                                     </div>
                                 </div>
 
@@ -142,50 +140,50 @@
 
                                 <!-- 자차 여부 체크박스 -->
                                 <div class="mb-3">
-                                    <strong><label class="form-label">Own a Car</label></strong>
+                                    <strong><label class="form-label">자차 유무</label></strong>
                                     <br>
                                     <div class="form-check d-inline-block mr-2">
                                         <input class="form-check-input" type="radio" name="car" id="carYes" value="yes">
-                                        <label class="form-check-label" for="carYes">Yes</label>
+                                        <label class="form-check-label" for="carYes">예</label>
                                     </div>
                                     <div class="form-check d-inline-block">
                                         <input class="form-check-input" type="radio" name="car" id="carNo" value="no">
-                                        <label class="form-check-label" for="carNo">No</label>
+                                        <label class="form-check-label" for="carNo">아니요</label>
                                     </div>
                                 </div>
 
                                 <!-- 선호도 조사 (라디오 버튼) -->
                                 <div class="mb-3">
-                                    <strong><label class="form-label">General Preference</label></strong>
+                                    <strong><label class="form-label">선호도(선택사항)</label></strong>
                                     <div class="form-check">
                                         <input class="form-check-input" type="radio" name="general_preference"
                                             id="popular" value="popular">
-                                        <label class="form-check-label" for="popular">Popular</label>
+                                        <label class="form-check-label" for="popular">많이찾는</label>
                                     </div>
                                     <div class="form-check">
                                         <input class="form-check-input" type="radio" name="general_preference"
                                             id="trending" value="trending">
-                                        <label class="form-check-label" for="trending">Trending</label>
+                                        <label class="form-check-label" for="trending">요즘뜨는</label>
                                     </div>
                                     <div class="form-check">
                                         <input class="form-check-input" type="radio" name="general_preference"
                                             id="reviewed" value="most_reviewed">
-                                        <label class="form-check-label" for="reviewed">Most Reviewed</label>
+                                        <label class="form-check-label" for="reviewed">리뷰많은</label>
                                     </div>
                                 </div>
 
                                 <!-- 선호도 조사 (체크박스) -->
                                 <div class="mb-3">
-                                    <strong><label class="form-label">Ambiance Preference</label></strong>
+                                    <strong><label class="form-label">분위기 선호도(선택사항)</label></strong>
                                     <div class="form-check">
                                         <input class="form-check-input" type="radio" id="quiet" value="quiet"
                                             name="ambiance_preferences">
-                                        <label class="form-check-label" for="quiet">Quiet</label>
+                                        <label class="form-check-label" for="quiet">조용한</label>
                                     </div>
                                     <div class="form-check">
                                         <input class="form-check-input" type="radio" id="good_ambiance"
                                             value="good_ambiance" name="ambiance_preferences">
-                                        <label class="form-check-label" for="good_ambiance">Good Ambiance</label>
+                                        <label class="form-check-label" for="good_ambiance">분위기 좋은</label>
                                     </div>
                                 </div>
 
@@ -193,7 +191,7 @@
                                 <!-- 제출 버튼 -->
                                 <div class="d-grid">
                                     <button class="btn btn-primary btn-space-gray btn-lg" id="submitButton"
-                                        type="submit">Submit</button>
+                                        type="submit">제출</button>
                                 </div>
                             </form>
 
@@ -205,26 +203,26 @@
                     <div class="col">
                         <div class="feature text-white rounded-3 mb-3"><i
                                 class="bi bi-chat-dots"></i></div>
-                        <div class="h5 mb-2">Chat with us</div>
-                        <p class="text-muted mb-0">Chat live with one of our support specialists.</p>
+                        <div class="h5 mb-2">실시간 채팅 지원</div>
+                        <p class="text-muted mb-0">전문 지원 팀과 실시간으로 채팅하며 도움을 받으세요.</p>
                     </div>
                     <div class="col">
                         <div class="feature text-white rounded-3 mb-3"><i
                                 class="bi bi-people"></i></div>
-                        <div class="h5">Ask the community</div>
-                        <p class="text-muted mb-0">Explore our community forums and communicate with other users.</p>
+                        <div class="h5">커뮤니티 상담</div>
+                        <p class="text-muted mb-0">다양한 경험을 공유하는 커뮤니티 포럼을 통해 정보를 얻으세요.</p>
                     </div>
                     <div class="col">
                         <div class="feature text-white rounded-3 mb-3"><i
                                 class="bi bi-question-circle"></i></div>
-                        <div class="h5">Support center</div>
-                        <p class="text-muted mb-0">Browse FAQ's and support articles to find solutions.</p>
+                        <div class="h5">고객 지원 센터</div>
+                        <p class="text-muted mb-0">자주 묻는 질문과 상세한 지원 문서를 통해 답변을 찾아보세요.</p>
                     </div>
                     <div class="col">
                         <div class="feature text-white rounded-3 mb-3"><i
                                 class="bi bi-telephone"></i></div>
-                        <div class="h5">Call us</div>
-                        <p class="text-muted mb-0">Call us during normal business hours at (555) 892-9403.</p>
+                        <div class="h5">전화 상담</div>
+                        <p class="text-muted mb-0">업무 시간 중에 (555) 892-9403번으로 전화하여 상담 받으세요.</p>
                     </div>
                 </div>
             </div>
@@ -238,11 +236,11 @@
                     <div class="small m-0 text-white">Copyright &copy; Your Website 2023</div>
                 </div>
                 <div class="col-auto">
-                    <a class="link-light small" href="#!">Privacy</a>
+                    <a class="link-light small" href="#!">개인정보처리방침</a>
                     <span class="text-white mx-1">&middot;</span>
-                    <a class="link-light small" href="#!">Terms</a>
+                    <a class="link-light small" href="#!">서비스 이용약관</a>
                     <span class="text-white mx-1">&middot;</span>
-                    <a class="link-light small" href="#!">Contact</a>
+                    <a class="link-light small" href="#!">고객지원 연락처</a>
                 </div>
             </div>
         </div>

@@ -6,6 +6,7 @@ from utill import map_time_to_number
 from utill import fetch_cards_by_industry
 from utill import industry_remapping
 from utill import get_place_data_by_industry_and_region
+from utill import get_weather_img_url
 from model_recommend import catboost
 from weather_fetcher import get_current_local_weather
 from dotenv import load_dotenv
@@ -60,17 +61,24 @@ def middle():
         "preference": request.form.get("general_preference"),  # 정렬 필터
         "ambiance": request.form.get("ambiance_preferences"),  # 분위기 필터
     }
+    # 날씨 상태에 따른 이미지 URL 결정
+    weather_img_url = get_weather_img_url(weather_info['main_weather'])
+
+    # 날씨 정보에 이미지 주소 추가
+    weather_info['weather_img_url'] = weather_img_url
 
     # 세션에 데이터 저장
     session["model_data"] = model_data
     session["franchise_info"] = franchise_info
     session["recommended_categories"] = recommended_categories
+    session["weather_info"] = weather_info
 
     # 'middle.html' 템플릿을 렌더링합니다.
     return render_template(
         "middle.html",
         user_info=korean_user_info,
         recommended_categories=recommended_categories,
+        weather_info=weather_info
     )
 
 
@@ -80,6 +88,7 @@ def submit():
     model_data = session.get("model_data", {})
     franchise_info = session.get("franchise_info", {})
     selected_industry = request.form.get("selected_industry")
+    weather_info = session.get("weather_info")
 
     # 사용자 정보를 한글로 변환합니다.
     korean_user_info = translate_to_korean(model_data)
@@ -106,6 +115,7 @@ def submit():
             selected_industry, franchise_info, korean_user_info
         ),
         cards=fetch_cards_by_industry(selected_industry),
+        weather_info=weather_info
     )
 
 
