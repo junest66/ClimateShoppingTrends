@@ -172,7 +172,7 @@ def get_place_data_by_industry_and_region(korean_user_info, industry):
     return data_list
 
 
-def get_weather_img_url(main):
+def get_weather_img_url(main, current_time):
     icon_urls = {
         'Thunderstorm': 'https://help.apple.com/assets/64F2669B7BEF8AE318002477/64F266A17BEF8AE3180024A8/ko_KR/efffb1e26f6de5bf5c8adbd872a2933a.png',
         'Drizzle': 'https://help.apple.com/assets/64F2669B7BEF8AE318002477/64F266A17BEF8AE3180024A8/ko_KR/a55fef55bbeb0762a8dd329b4b8ad342.png',
@@ -190,5 +190,8 @@ def get_weather_img_url(main):
         'Clear': 'https://help.apple.com/assets/64F2669B7BEF8AE318002477/64F266A17BEF8AE3180024A8/ko_KR/575900edccbc7def167f7874c02aeb0b.png',
         'Clouds': 'https://help.apple.com/assets/64F2669B7BEF8AE318002477/64F266A17BEF8AE3180024A8/ko_KR/66117fab0f288a2867b340fa2fcde31b.png',
     }
+    # 'Clear' 날씨이고 current_time이 8, 9, 10, 1 중 하나일 경우의 URL 변경
+    if main == 'Clear' and current_time in [8, 9, 10, 1]:
+        return 'https://help.apple.com/assets/64F2669B7BEF8AE318002477/64F266A17BEF8AE3180024A8/ko_KR/1200cde3569cf69bd80e1ddabc0f15cd.png'
     
     return icon_urls.get(main)
