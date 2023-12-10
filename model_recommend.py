@@ -26,8 +26,8 @@ def mapper(data):
 
 def catboost(form_data):
     test = mapper(form_data)
-    print(form_data)
-    cat = load_model('saved_cat')
+    print(test)
+    cat = load_model('catboost_model')
     
     probabilities = cat.predict_proba(test)
     top_3 = np.argsort(probabilities, axis=1)[:, -3:]
@@ -38,7 +38,5 @@ def catboost(form_data):
     for top in (top_3):
         if top in category_dict:
             value.append(category_dict[top])
-            
-    print(value)
 
     return value
