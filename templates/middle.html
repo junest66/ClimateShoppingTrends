@@ -35,16 +35,25 @@
         <section class="py-5">
             <div class="container px-5">
                 <div class="bg-container rounded-3 py-5 px-4 px-md-5 mb-5">
-                    <h1 class="fw-bolder text-center">Your Personalized Recommendations</h1>
-                    <p class="lead fw-normal text-muted mb-4 text-center">Based on your details, here are our
-                        suggestions</p>
+                    <h1 class="fw-bolder text-center">이거 어때?</h1>
+                    <p class="lead fw-normal text-muted mb-4 text-center">날씨와 사용자 정보에 따른 맞춤 추천</p>
                     <div class="user-info card">
-                        <h3 class="text-center card-header">추천 결제 업종</h3>
+                        <h3 class="text-center card-header">세부사항</h3>
                         <div class="card-main background-white">
-                            <p><i class="fas fa-user icon"></i> {{ user_info.age }} {{ user_info.gender }}</p>
-                            <p><i class="fas fa-map-marker-alt icon"></i> {{ user_info.city }} {{ user_info.area }} {{ user_info.alien }}</p>
-                            <p><i class="fas fa-ring icon"></i> {{ user_info.married }}</p>
-                            <p><i class="fas fa-child icon"></i> {{ user_info.child }}</p>
+                            <div class="d-flex" style="justify-content: center;">
+                                <div class="mt-2" style="margin-right: 50px;">
+                                    <p><i class="fas fa-user icon"></i> {{ user_info.age }} {{ user_info.gender }}</p>
+                                    <p><i class="fas fa-map-marker-alt icon"></i> {{ user_info.city }} {{ user_info.area }} {{ user_info.alien }}</p>
+                                    <p><i class="fas fa-ring icon"></i> {{ user_info.married }}</p>
+                                    <p><i class="fas fa-child icon"></i> {{ user_info.child }}</p>
+                                </div>
+                                <div style="margin-left: 50px;">
+                                    <img width="100%" src="{{ weather_info['weather_img_url'] }}" alt="날씨 아이콘">
+                                    <p class="text-center">
+                                        현재온도: {{ (weather_info.temp - 273.15) | round(1) }}°C
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="row">
