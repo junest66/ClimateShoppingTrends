@@ -47,3 +47,20 @@
 <img src="https://avatars.githubusercontent.com/u/127590055?v=4" height=130 width=130></img>|<img src="https://avatars.githubusercontent.com/u/121853214?v=4" height=130 width=130></img>|<img src="https://avatars.githubusercontent.com/u/101254480?v=4" height=130 width=130></img>|<img src="https://avatars.githubusercontent.com/u/97399807?v=4" height=130 width=130></img>|
 <a href="https://github.com/LSH0411" target="_blank"><img src="https://img.shields.io/badge/GitHub-black.svg?&style=round&logo=github"/></a>|<a href="https://github.com/junest66" target="_blank"><img src="https://img.shields.io/badge/GitHub-black.svg?&style=round&logo=github"/></a>|<a href="https://github.com/vuswltmd" target="_blank"><img src="https://img.shields.io/badge/GitHub-black.svg?&style=round&logo=github"/></a>|<a href="https://github.com/iltdm" target="_blank"><img src="https://img.shields.io/badge/GitHub-black.svg?&style=round&logo=github"/></a>|<a href="https://github.com/SangwonYoon" target="_blank"><img src="https://img.shields.io/badge/GitHub-black.svg?&style=round&logo=github"/></a>
 <a href="#" target="_blank"><img src="https://img.shields.io/badge/Gmail-EA4335?style&logo=Gmail&logoColor=white"/></a>|<a href="#" target="_blank"><img src="https://img.shields.io/badge/Gmail-EA4335?style&logo=Gmail&logoColor=white"/></a>|<a href="#" target="_blank"><img src="https://img.shields.io/badge/Gmail-EA4335?style&logo=Gmail&logoColor=white"/></a>|<a href="mailto:#" target="_blank"><img src="https://img.shields.io/badge/Gmail-EA4335?style&logo=Gmail&logoColor=white"/></a>|<a href="mailto:#" target="_blank"><img src="https://img.shields.io/badge/Gmail-EA4335?style&logo=Gmail&logoColor=white"/></a>|
+### 👨🏼‍💻 역할 분담
+![역할분담](https://github.com/vuswltmd/ClimateShoppingTrends/assets/101254480/6fbf731f-0b5c-4af6-aa66-2a8a555d42b7)
+
+
+## 🗓️ Project TimeLine
+
+## 💿 Data
+
+## 📊 Model
+
+
+## 📚 Further Information
+### 1️⃣ 개발 스택 및 개발 환경
+
+<br>
+
+### 2️⃣ 협업 Tools
