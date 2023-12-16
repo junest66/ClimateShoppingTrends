@@ -5,6 +5,8 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.action_chains import ActionChains
+from selenium.webdriver.chrome.service import Service
+import chromedriver_autoinstaller
 import time
 import os
 import json
@@ -14,6 +16,20 @@ BASE_URL = "https://card-gorilla.com/search/card?cate=CRD&search_benefit="
 WAIT_TIME = 10
 MAX_CARDS = 20
 
+def init_driver():
+    """
+    웹 드라이버 초기화 및 옵션 설정
+    """
+
+    # Chrome 옵션 설정
+    chrome_options = Options()
+    chrome_options.add_experimental_option("detach", True)
+
+    # ChromeDriver 자동 설치 및 Service 객체 생성
+    service = Service(chromedriver_autoinstaller.install())
+
+    # WebDriver 객체 생성
+    return webdriver.Chrome(service=service, options=chrome_options)
 
 def crawl_and_save_each_category():
     benefit_name_mapping = {
@@ -80,7 +96,7 @@ def crawl_cards_for_benefits(benefit_codes):
     """
     주어진 혜택 코드에 따라 카드 정보를 크롤링합니다.
     """
-    driver = webdriver.Chrome()
+    driver = init_driver()
     base_url = "https://card-gorilla.com/search/card?cate=CRD&search_benefit="
     driver.get(f"{base_url}{','.join(map(str, benefit_codes))}")
     time.sleep(3)
