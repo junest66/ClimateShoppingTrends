@@ -3,6 +3,7 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+import chromedriver_autoinstaller
 import time
 import re
 import csv
@@ -35,9 +36,15 @@ def init_driver():
     """
     웹 드라이버 초기화 및 옵션 설정
     """
+    # ChromeDriver 자동 설치
+    path = chromedriver_autoinstaller.install()
+
+    # Chrome 옵션 설정
     chrome_options = Options()
     chrome_options.add_experimental_option("detach", True)
-    driver = webdriver.Chrome(options=chrome_options)
+
+    # WebDriver 객체 생성
+    driver = webdriver.Chrome(path, options=chrome_options)
     return driver
 
 
