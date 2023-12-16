@@ -64,3 +64,17 @@
 <br>
 
 ### 2️⃣ 협업 Tools
+
+<br>
+
+### 3️⃣ Used Libraries
+- pycaret==3.2.0 <br>
+- pandas==1.5.3 <br>
+- numpy==1.25.2 <br>
+- selenium==4.16.0 <br>
+- flask==3.0.0 <br>
+- python-dotenv==1.0.0 <br>
+- chromedriver-autoinstaller==0.6.3 <br>
+- Flask-Session==0.5.0 <br>
+- markupsafe==2.1.3 <br>
+- catboost==1.2.2 <br>
