@@ -31,7 +31,7 @@ def catboost(form_data):
     test = mapper(form_data)
 
     print(test)
-    cat = load_model('catboost_model')
+    cat = load_model('catboost')
     
     probabilities = cat.predict_proba(test)
     top_3 = np.argsort(probabilities, axis=1)[:, -3:]
