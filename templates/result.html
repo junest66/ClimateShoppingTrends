@@ -35,7 +35,7 @@
         <section class="py-5">
             <div class="container px-5">
                 <div class="bg-container rounded-3 py-5 px-4 px-md-5 mb-5">
-                    <h1 class="fw-bolder text-center">이거 어때?</h1>
+                    <h1 class="fw-bolder text-center">이거 어때요?</h1>
                     <p class="lead fw-normal text-muted mb-4 text-center">날씨와 사용자 정보에 따른 맞춤 추천</p>
                     <div class="user-info card">
                         <h3 class="text-center card-header">추천 결제 업종 : <strong>{{ selected_industry }}</strong></h3>
@@ -43,7 +43,8 @@
                             <div class="d-flex" style="justify-content: center;">
                                 <div class="mt-2" style="margin-right: 50px;">
                                     <p><i class="fas fa-user icon"></i> {{ user_info.age }} {{ user_info.gender }}</p>
-                                    <p><i class="fas fa-map-marker-alt icon"></i> {{ user_info.city }} {{ user_info.area }} {{ user_info.alien }}</p>
+                                    <p><i class="fas fa-map-marker-alt icon"></i> {{ user_info.city }} {{ user_info.area
+                                        }} {{ user_info.alien }}</p>
                                     <p><i class="fas fa-ring icon"></i> {{ user_info.married }}</p>
                                     <p><i class="fas fa-child icon"></i> {{ user_info.child }}</p>
                                 </div>
@@ -78,7 +79,8 @@
                                             </div>
                                             {% if place.grade is defined and place.grade != '0.0' %}
                                             <span class="grade">
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 13" class="GWkzU" aria-hidden="true">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 13"
+                                                    class="GWkzU" aria-hidden="true">
                                                     <path
                                                         d="M8.26 4.68h4.26a.48.48 0 01.28.87L9.35 8.02l1.33 4.01a.48.48 0 01-.18.54.48.48 0 01-.56 0l-3.44-2.5-3.44 2.5a.48.48 0 01-.74-.54l1.33-4L.2 5.54a.48.48 0 01.28-.87h4.26l1.3-4a.48.48 0 01.92 0l1.3 4z">
                                                     </path>
