@@ -78,4 +78,5 @@
 - Flask-Session==0.5.0 <br>
 - markupsafe==2.1.3 <br>
 - catboost==1.2.2 <br>
+
 pip install -r requirements.txt 실행시 위 라이브러리를 자동으로 설치합니다.
