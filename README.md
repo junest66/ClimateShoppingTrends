@@ -3,7 +3,7 @@
 <img src="https://img.shields.io/badge/Python-3776AB?style=square&logo=Python&logoColor=white"/>&nbsp;<img src="https://img.shields.io/badge/Flask-white?style=square&logo=Flask&logoColor=black"/>&nbsp;<img src = "https://img.shields.io/badge/HTML5-E34F26?style=square&logo=HTML5&logoColor=white"/>&nbsp;<img src="https://img.shields.io/badge/CSS3-1572B6?style=square&logo=CSS3&logoColor=white"/>&nbsp;<img src="https://img.shields.io/badge/Javascript-F7DF1E?style=square&logo=Javascript&logoColor=black"/> 
 </p>
 
-<img  width="800" src="https://github.com/vuswltmd/ClimateShoppingTrends/assets/101254480/d172086f-abb8-4e41-97f5-9fd31113e785">
+<img  width="800" src="https://github.com/junest66/ClimateShoppingTrends/assets/121853214/e4b20cd9-0e2b-4afb-86c9-31d711d26a7e">
 
 <br>
 
@@ -19,9 +19,9 @@
 
 <br>
 
-* **`배경`** : ???
+* **`배경`** : 디지털 결제 시장의 확장과 데이터 분석의 진보가 소비자의 개인화된 서비스 요구를 증폭시키고 있습니다. 이에 대응하여, 기존의 서비스들은 주로 결제 이력에 기반한 추천을 제공하지만, 복잡해지는 소비자의 생활 패턴과 다양한 특성을 반영할 필요성을 느꼈습니다.
 
-* **`목표`**: 카드결제 데이터와 날씨 데이터를 기반으로 사용자 맞춤형 카드 혜택을 추천해주는 인공지능 모델 개발하고 더 나아가 카드 혜택을 누릴 수 있는 가맹점까지 추천을 제공하며 이를 웹서비스로 확장
+* **`목표`**: 카드결제 데이터와 날씨 데이터를 기반으로 사용자 맞춤형 카드 혜택을 추천해주는 인공지능 모델 개발하고 더 나아가 카드 혜택을 누릴 수 있는 가맹점까지 추천을 제공하며 이를 웹서비스로 확장하는게 목표입니다.
 
 <br>
 
@@ -48,10 +48,7 @@
 <a href="https://github.com/LSH0411" target="_blank"><img src="https://img.shields.io/badge/GitHub-black.svg?&style=round&logo=github"/></a>|<a href="https://github.com/junest66" target="_blank"><img src="https://img.shields.io/badge/GitHub-black.svg?&style=round&logo=github"/></a>|<a href="https://github.com/vuswltmd" target="_blank"><img src="https://img.shields.io/badge/GitHub-black.svg?&style=round&logo=github"/></a>|<a href="https://github.com/iltdm" target="_blank"><img src="https://img.shields.io/badge/GitHub-black.svg?&style=round&logo=github"/></a>|<a href="https://github.com/SangwonYoon" target="_blank"><img src="https://img.shields.io/badge/GitHub-black.svg?&style=round&logo=github"/></a>
 <a href="#" target="_blank"><img src="https://img.shields.io/badge/Gmail-EA4335?style&logo=Gmail&logoColor=white"/></a>|<a href="#" target="_blank"><img src="https://img.shields.io/badge/Gmail-EA4335?style&logo=Gmail&logoColor=white"/></a>|<a href="#" target="_blank"><img src="https://img.shields.io/badge/Gmail-EA4335?style&logo=Gmail&logoColor=white"/></a>|<a href="mailto:#" target="_blank"><img src="https://img.shields.io/badge/Gmail-EA4335?style&logo=Gmail&logoColor=white"/></a>|<a href="mailto:#" target="_blank"><img src="https://img.shields.io/badge/Gmail-EA4335?style&logo=Gmail&logoColor=white"/></a>|
 ### 👨🏼‍💻 역할 분담
-![역할분담](https://github.com/vuswltmd/ClimateShoppingTrends/assets/101254480/6fbf731f-0b5c-4af6-aa66-2a8a555d42b7)
-
-
-## 🗓️ Project TimeLine
+![구현업무](https://github.com/junest66/ClimateShoppingTrends/assets/121853214/e53e5481-62a9-420f-9f66-c9a5ca0021f1)
 
 ## 💿 Data
 
@@ -60,23 +57,53 @@
 
 ## 📚 Further Information
 ### 1️⃣ 개발 스택 및 개발 환경
+![개발스택](https://github.com/junest66/ClimateShoppingTrends/assets/121853214/41d18c64-2150-4876-aaa4-657c4a5f3ce7)
 
+### 2️⃣ Usage
+### 1. 라이브러리 설치
+---
+`requirements.txt` 파일을 다운로드합니다:  
+[requirements.txt](https://github.com/junest66/ClimateShoppingTrends/files/13695645/requirements.txt)
+
+다운로드한 파일에는 다음과 같은 라이브러리들이 포함되어 있습니다:
+- pycaret==3.2.0
+- pandas==1.5.3
+- numpy==1.25.2
+- selenium==4.16.0
+- flask==3.0.0
+- python-dotenv==1.0.0
+- chromedriver-autoinstaller==0.6.3
+- Flask-Session==0.5.0
+- markupsafe==2.1.3
+- catboost==1.2.2
+
+아래 명령어를 사용하여 이 파일에 명시된 라이브러리들을 설치합니다.
+
+```bash
+pip install -r requirements.txt
+```
+### 2. 환경 설정
+<hr>
 <br>
 
-### 2️⃣ 협업 Tools
+프로젝트 실행을 위해 먼저 `.env` 파일을 생성하고 아래의 두 가지 키를 설정합니다:
 
-<br>
+1. `OPENWEATHER_API_KEY`: [OpenWeatherMap](https://openweathermap.org/current)에서 API 키를 발급받아 입력합니다.
+2. `FLASK_SECRET_KEY`: Flask 세션 관리를 위해 사용자가 직접 생성한 시크릿 키를 입력합니다.
 
-### 3️⃣ Used Libraries
-- pycaret==3.2.0 <br>
-- pandas==1.5.3 <br>
-- numpy==1.25.2 <br>
-- selenium==4.16.0 <br>
-- flask==3.0.0 <br>
-- python-dotenv==1.0.0 <br>
-- chromedriver-autoinstaller==0.6.3 <br>
-- Flask-Session==0.5.0 <br>
-- markupsafe==2.1.3 <br>
-- catboost==1.2.2 <br>
+```python
+OPENWEATHER_API_KEY='여기에_OpenWeather_API_키를_입력하세요'
+FLASK_SECRET_KEY='여기에_생성한_Flask_시크릿_키를_입력하세요'
+```
+### 3. 실행 방법
+---
+`form_processor.py` 파일을 실행하고 다음 단계에 따라 진행하세요:
+1. 웹 브라우저에서 `http://127.0.0.1:5000`로 접속합니다.
+2. 본인의 정보를 입력합니다. 선호도, 분위기 선호도, 자차 유무는 음식관련 추천에 사용합니다.
+3. AI 모델이 입력 정보를 분석해 관련 업종 3가지를 추천합니다.
+4. 추천된 업종에 대해 자세히 보기를 클릭하면 해당 업종과 관련된 장소 및 카드 혜택 정보를 볼 수 있습니다.
 
-pip install -r requirements.txt 실행시 위 라이브러리를 자동으로 설치합니다.
+#### ❗️ 주의사항
+- 음식 관련 추천은 사용자의 추가 정보로 필터를 적용하여 실시간 웹 크롤링을 통해 제공됩니다. 이후 네이버 웹사이트의 업데이트로 인해 코드의 수정이 필요할 수 도 있습니다.
+- 다른 업종 추천은 미리 수집된 데이터를 사용합니다. 데이터는 항상 최신 상태를 반영하지 않을 수 있으므로, 최신 정보를 확인하는 것이 좋습니다.
+
