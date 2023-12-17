@@ -33,7 +33,7 @@
 <br>
 
 ## ⚙️ Use Case
-![예시-케이스](https://github.com/vuswltmd/ClimateShoppingTrends/assets/101254480/1a3323ed-57ee-45dd-902f-9722eca54baa)
+![예시-케이스](https://github.com/junest66/ClimateShoppingTrends/assets/101254480/d7449ede-0e06-4707-8324-1ccce6a20b4c)
 
 >1. http://127.0.0.1:5000에 접속합니다
 >2. 본인의 정보를 입력합니다. 선호도, 분위기 선호도, 자차 유무는 음식관련 추천에 적용되는 항목입니다.
