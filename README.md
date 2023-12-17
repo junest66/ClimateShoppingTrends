@@ -53,11 +53,45 @@
 ![구현업무](https://github.com/junest66/ClimateShoppingTrends/assets/121853214/2444cb71-cf21-4faf-aef5-445fb059749e)
 
 ## 💿 Data
-![데이터사진1](https://github.com/junest66/ClimateShoppingTrends/assets/121853214/a7687e9a-f8f6-42a5-8b3d-5c030dc69c1f)
-![데이터사진2](https://github.com/junest66/ClimateShoppingTrends/assets/121853214/c56b0630-5c24-4de9-9231-cb36cd69a4ea)
+### 1️⃣ 데이터 수집
+#### 1. 금융데이터
+![금융데이터](https://github.com/junest66/ClimateShoppingTrends/assets/121853214/4e7f5238-c130-437c-be32-ba6df5b013ed)
+#### 2. 비금융데이터 
+![날씨데이터](https://github.com/junest66/ClimateShoppingTrends/assets/121853214/90bce051-13f1-4eb8-9476-bfdc2530a30d)
+
+<hr>
+
+### 2️⃣ EDA 및 데이터 전처리
+<img src="https://github.com/junest66/ClimateShoppingTrends/assets/121853214/6a3b39a6-ef81-4984-b012-e14a50f72d8a" alt="결제데이터 전처리" width="940">
+<br><br>
+<img src="https://github.com/junest66/ClimateShoppingTrends/assets/121853214/ee6cc9a4-0fd7-465e-9c36-539456a31fe7" alt="날씨데이터 전처리" width="940">
+<br><br>
+<img src="https://github.com/junest66/ClimateShoppingTrends/assets/121853214/7427c6b4-63eb-4d6b-949a-456215df2129" alt="카테고리빈도수" width="940">
+
+### RCS
+<img src="https://github.com/junest66/ClimateShoppingTrends/assets/121853214/2a928c91-c2e3-464d-a649-84c7da04f848" alt="Rare Class Sampling" width="940">
+<img src="https://github.com/junest66/ClimateShoppingTrends/assets/121853214/d19b12a4-963c-43e1-ab30-05c62a4ed356" alt="RCS벡터" width="940">
+
+### RCS 성능 비교
+<img src="https://github.com/junest66/ClimateShoppingTrends/assets/121853214/e1709869-5c38-41bc-a8d0-4c000966495b" alt="RCS 성능 비교 1">
+<img src="https://github.com/junest66/ClimateShoppingTrends/assets/121853214/66cc112a-5ffb-4b92-8f21-3f7684fc8ad8" alt="RCS 성능 비교 2">
+<hr>
+
+### 3️⃣ 결합된 최종 데이터
+![최종데이터](https://github.com/junest66/ClimateShoppingTrends/assets/121853214/3cb9b9e1-048d-48a1-945a-fa4c1b33f40c)
+
 
 ## 📊 Model
+### 1️⃣ 실험지표
 
+![실험지표](https://github.com/junest66/ClimateShoppingTrends/assets/121853214/4eccd64c-4d22-4550-baa7-69c2226d292f)
+
+### 2️⃣ 실험결과
+
+![기반모델](https://github.com/junest66/ClimateShoppingTrends/assets/121853214/bbf4a938-6ce0-476c-9e46-b8dad74c5ee6)
+
+### 3️⃣ 최종 모델 및 파이프라인
+![파이프라인](https://github.com/junest66/ClimateShoppingTrends/assets/121853214/69e95ff0-89e1-435e-bdad-0b6c2ceec77c)
 
 ## 📚 Further Information
 ### 1️⃣ 개발 스택 및 개발 환경
