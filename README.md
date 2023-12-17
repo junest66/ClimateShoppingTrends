@@ -54,7 +54,10 @@
 
 ## 💿 Data
 ### 1️⃣ 데이터 수집
-![금융데이터](https://github.com/junest66/ClimateShoppingTrends/assets/121853214/4e7f5238-c130-437c-be32-ba6df5b013ed) ![날씨데이터](https://github.com/junest66/ClimateShoppingTrends/assets/121853214/90bce051-13f1-4eb8-9476-bfdc2530a30d)
+#### 1. 금융데이터
+![금융데이터](https://github.com/junest66/ClimateShoppingTrends/assets/121853214/4e7f5238-c130-437c-be32-ba6df5b013ed)
+#### 2. 비금융데이터 
+![날씨데이터](https://github.com/junest66/ClimateShoppingTrends/assets/121853214/90bce051-13f1-4eb8-9476-bfdc2530a30d)
 
 <hr>
 
@@ -70,10 +73,8 @@
 <img src="https://github.com/junest66/ClimateShoppingTrends/assets/121853214/d19b12a4-963c-43e1-ab30-05c62a4ed356" alt="RCS벡터" width="940">
 
 ### RCS 성능 비교
-<p>
-  <img src="https://github.com/junest66/ClimateShoppingTrends/assets/121853214/e1709869-5c38-41bc-a8d0-4c000966495b" width="49%" alt="RCS 성능 비교 1">
-  <img src="https://github.com/junest66/ClimateShoppingTrends/assets/121853214/66cc112a-5ffb-4b92-8f21-3f7684fc8ad8" width="49%" alt="RCS 성능 비교 2">
-</p>
+<img src="https://github.com/junest66/ClimateShoppingTrends/assets/121853214/e1709869-5c38-41bc-a8d0-4c000966495b" alt="RCS 성능 비교 1">
+<img src="https://github.com/junest66/ClimateShoppingTrends/assets/121853214/66cc112a-5ffb-4b92-8f21-3f7684fc8ad8" alt="RCS 성능 비교 2">
 <hr>
 
 ### 3️⃣ 결합된 최종 데이터
