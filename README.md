@@ -82,20 +82,15 @@
 
 
 ## 📊 Model
-### 1️⃣ 실험지표
+### 1️⃣ 실험결과
+![실험결과](https://github.com/junest66/ClimateShoppingTrends/assets/121853214/723ae2b4-2d9b-461b-9681-ac557bb8133e)
+### 2️⃣ 최종 모델 및 파이프라인
+![파이프라인](https://github.com/junest66/ClimateShoppingTrends/assets/121853214/a81eb350-66d9-4c46-bcb2-1b7f2378bb54)
 
-![실험지표](https://github.com/junest66/ClimateShoppingTrends/assets/121853214/4eccd64c-4d22-4550-baa7-69c2226d292f)
-
-### 2️⃣ 실험결과
-
-![기반모델](https://github.com/junest66/ClimateShoppingTrends/assets/121853214/bbf4a938-6ce0-476c-9e46-b8dad74c5ee6)
-
-### 3️⃣ 최종 모델 및 파이프라인
-![파이프라인](https://github.com/junest66/ClimateShoppingTrends/assets/121853214/69e95ff0-89e1-435e-bdad-0b6c2ceec77c)
 
 ## 📚 Further Information
 ### 1️⃣ 개발 스택 및 개발 환경
-![개발스택](https://github.com/junest66/ClimateShoppingTrends/assets/121853214/41d18c64-2150-4876-aaa4-657c4a5f3ce7)
+![기술스택](https://github.com/junest66/ClimateShoppingTrends/assets/121853214/2414c5b7-ad06-4d10-b8c7-f2b72e6049b6)
 
 ### 2️⃣ Usage
 ### 1. 라이브러리 설치
