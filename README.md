@@ -1,13 +1,14 @@
-<h1> 인공지능 기반 업종 추천 서비스 '이거 어때' </h1>
+<h1> 인공지능 기반 업종 추천 서비스 '이거 어때요' </h1>
 
 <img src="https://img.shields.io/badge/Python-3776AB?style=square&logo=Python&logoColor=white"/>&nbsp;<img src="https://img.shields.io/badge/Flask-white?style=square&logo=Flask&logoColor=black"/>&nbsp;<img src = "https://img.shields.io/badge/HTML5-E34F26?style=square&logo=HTML5&logoColor=white"/>&nbsp;<img src="https://img.shields.io/badge/CSS3-1572B6?style=square&logo=CSS3&logoColor=white"/>&nbsp;<img src="https://img.shields.io/badge/Javascript-F7DF1E?style=square&logo=Javascript&logoColor=black"/> 
 </p>
 
-<img  width="800" src="https://github.com/junest66/ClimateShoppingTrends/assets/121853214/e4b20cd9-0e2b-4afb-86c9-31d711d26a7e">
+<img  width="800" src="https://github.com/junest66/ClimateShoppingTrends/assets/121853214/948b3169-e468-4318-be1c-e4039b79146e">
+
 
 <br>
 
-> 이거 어때?는 날씨 기반 추천 업종을 제공합니다. 인공지능 모델의 학습된 정보를 바탕으로 입력한 사용자 정보에 가장 최적화된 업종을 제공합니다.
+> 이거 어때요?는 날씨 기반 추천 업종을 제공합니다. 인공지능 모델의 학습된 정보를 바탕으로 입력한 사용자 정보에 가장 최적화된 업종을 제공합니다.
 
 <br>
 
@@ -15,7 +16,7 @@
 
 ### 기획 의도 및 기대효과 
 
-<img width="1407" alt="Screenshot 2023-07-31 at 11 36 29 AM" src="https://github.com/vuswltmd/ClimateShoppingTrends/assets/101254480/3df283ea-12ac-445e-a2e0-12f67f77a841">
+<img width="1407" alt="Screenshot 2023-07-31 at 11 36 29 AM" src="https://github.com/junest66/ClimateShoppingTrends/assets/121853214/46f5a619-c8de-4250-a617-d6866138423e">
 
 <br>
 
@@ -48,9 +49,11 @@
 <a href="https://github.com/LSH0411" target="_blank"><img src="https://img.shields.io/badge/GitHub-black.svg?&style=round&logo=github"/></a>|<a href="https://github.com/junest66" target="_blank"><img src="https://img.shields.io/badge/GitHub-black.svg?&style=round&logo=github"/></a>|<a href="https://github.com/vuswltmd" target="_blank"><img src="https://img.shields.io/badge/GitHub-black.svg?&style=round&logo=github"/></a>|<a href="https://github.com/iltdm" target="_blank"><img src="https://img.shields.io/badge/GitHub-black.svg?&style=round&logo=github"/></a>|<a href="https://github.com/SangwonYoon" target="_blank"><img src="https://img.shields.io/badge/GitHub-black.svg?&style=round&logo=github"/></a>
 <a href="#" target="_blank"><img src="https://img.shields.io/badge/Gmail-EA4335?style&logo=Gmail&logoColor=white"/></a>|<a href="#" target="_blank"><img src="https://img.shields.io/badge/Gmail-EA4335?style&logo=Gmail&logoColor=white"/></a>|<a href="#" target="_blank"><img src="https://img.shields.io/badge/Gmail-EA4335?style&logo=Gmail&logoColor=white"/></a>|<a href="mailto:#" target="_blank"><img src="https://img.shields.io/badge/Gmail-EA4335?style&logo=Gmail&logoColor=white"/></a>|<a href="mailto:#" target="_blank"><img src="https://img.shields.io/badge/Gmail-EA4335?style&logo=Gmail&logoColor=white"/></a>|
 ### 👨🏼‍💻 역할 분담
-![구현업무](https://github.com/junest66/ClimateShoppingTrends/assets/121853214/e53e5481-62a9-420f-9f66-c9a5ca0021f1)
+![구현업무](https://github.com/junest66/ClimateShoppingTrends/assets/121853214/2444cb71-cf21-4faf-aef5-445fb059749e)
 
 ## 💿 Data
+![데이터사진1](https://github.com/junest66/ClimateShoppingTrends/assets/121853214/a7687e9a-f8f6-42a5-8b3d-5c030dc69c1f)
+![데이터사진2](https://github.com/junest66/ClimateShoppingTrends/assets/121853214/c56b0630-5c24-4de9-9231-cb36cd69a4ea)
 
 ## 📊 Model
 
@@ -104,6 +107,6 @@ FLASK_SECRET_KEY='여기에_생성한_Flask_시크릿_키를_입력하세요'
 4. 추천된 업종에 대해 자세히 보기를 클릭하면 해당 업종과 관련된 장소 및 카드 혜택 정보를 볼 수 있습니다.
 
 #### ❗️ 주의사항
-- 음식 관련 추천은 사용자의 추가 정보로 필터를 적용하여 실시간 웹 크롤링을 통해 제공됩니다. 이후 네이버 웹사이트의 업데이트로 인해 코드의 수정이 필요할 수 도 있습니다.
-- 다른 업종 추천은 미리 수집된 데이터를 사용합니다. 데이터는 항상 최신 상태를 반영하지 않을 수 있으므로, 최신 정보를 확인하는 것이 좋습니다.
+- 음식 관련 가맹점 추천은 사용자의 추가 정보로 필터를 적용하여 실시간 웹 크롤링을 통해 제공됩니다. 이후 네이버 웹사이트의 업데이트로 인해 코드의 수정이 필요할 수도 있습니다.
+- 다른 업종 가맹점 추천은 미리 수집된 데이터를 사용합니다. 데이터는 항상 최신 상태를 반영하지 않을 수 있으므로, 최신 정보를 확인하는 것이 좋습니다.
 
