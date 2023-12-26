@@ -55,9 +55,9 @@
 ## 💿 Data
 ### 1️⃣ 데이터 수집
 #### 1. 금융데이터
-![금융데이터](https://github.com/junest66/ClimateShoppingTrends/assets/121853214/4e7f5238-c130-437c-be32-ba6df5b013ed)
+![금융데이터](https://github.com/junest66/ClimateShoppingTrends/assets/121853214/541e27c6-f901-4f53-baec-64138d4e6ed3)
 #### 2. 비금융데이터 
-![날씨데이터](https://github.com/junest66/ClimateShoppingTrends/assets/121853214/90bce051-13f1-4eb8-9476-bfdc2530a30d)
+![비금융데이터](https://github.com/junest66/ClimateShoppingTrends/assets/121853214/9ecc6a64-a069-467c-8d62-170f760620b6)
 
 <hr>
 
